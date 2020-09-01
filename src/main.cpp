@@ -23,8 +23,8 @@ int OpencvDemo019();
 int OpencvDemo020();
 int OpencvDemo021();
 int OpencvDemo022();
-//int OpencvDemo023();
-//int OpencvDemo024();
+int OpencvDemo023();
+int OpencvDemo024();
 //int OpencvDemo025();
 //int OpencvDemo026();
 //int OpencvDemo027();
@@ -154,16 +154,16 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo022();
 		break;
 
-//	case 23:
-//		//
-//		ret = OpencvDemo023();
-//		break;
-//
-//	case 24:
-//		//
-//		ret = OpencvDemo024();
-//		break;
-//
+	case 23:
+		// 中值模糊
+		ret = OpencvDemo023();
+		break;
+
+	case 24:
+		// 图像噪声
+		ret = OpencvDemo024();
+		break;
+
 //	case 25:
 //		//
 //		ret = OpencvDemo025();
