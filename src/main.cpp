@@ -21,6 +21,16 @@ int OpencvDemo017();
 int OpencvDemo018();
 int OpencvDemo019();
 int OpencvDemo020();
+int OpencvDemo021();
+int OpencvDemo022();
+//int OpencvDemo023();
+//int OpencvDemo024();
+//int OpencvDemo025();
+//int OpencvDemo026();
+//int OpencvDemo027();
+//int OpencvDemo028();
+//int OpencvDemo029();
+//int OpencvDemo030();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -133,6 +143,56 @@ int main(int argc, char** argv) {
 		// 图像直方图反向投影
 		ret = OpencvDemo020();
 		break;
+
+	case 21:
+		// 图像卷积操作
+		ret = OpencvDemo021();
+		break;
+
+	case 22:
+		// 图像均值与高斯模糊
+		ret = OpencvDemo022();
+		break;
+
+//	case 23:
+//		//
+//		ret = OpencvDemo023();
+//		break;
+//
+//	case 24:
+//		//
+//		ret = OpencvDemo024();
+//		break;
+//
+//	case 25:
+//		//
+//		ret = OpencvDemo025();
+//		break;
+//
+//	case 26:
+//		//
+//		ret = OpencvDemo026();
+//		break;
+//
+//	case 27:
+//		//
+//		ret = OpencvDemo027();
+//		break;
+//
+//	case 28:
+//		//
+//		ret = OpencvDemo028();
+//		break;
+//
+//	case 29:
+//		//
+//		ret = OpencvDemo029();
+//		break;
+//
+//	case 30:
+//		//
+//		ret = OpencvDemo030();
+//		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
