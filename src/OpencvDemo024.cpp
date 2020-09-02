@@ -1,8 +1,8 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-void add_salt_pepper_noise(cv::Mat& image);
-void gaussian_noise(cv::Mat& image);
+static void add_salt_pepper_noise(cv::Mat& image);
+static void add_gaussian_noise(cv::Mat& image);
 
 // 图像噪声
 int OpencvDemo024() {
@@ -15,14 +15,14 @@ int OpencvDemo024() {
 	}
 
 	add_salt_pepper_noise(src);
-	gaussian_noise(src);
+	add_gaussian_noise(src);
 
 	cv::waitKey(0);
 
 	return cv::Error::StsOk;
 }
 
-void add_salt_pepper_noise(cv::Mat& image) {
+static void add_salt_pepper_noise(cv::Mat& image) {
 	cv::RNG rng(12345);
 	int h = image.rows;
 	int w = image.cols;
@@ -48,7 +48,7 @@ void add_salt_pepper_noise(cv::Mat& image) {
 	cv::imshow("salt-pepper noise", result);
 }
 
-void gaussian_noise(cv::Mat& image) {
+static void add_gaussian_noise(cv::Mat& image) {
 	cv::Mat noise = cv::Mat::zeros(image.size(), image.type());
 	cv::Mat dst;
 

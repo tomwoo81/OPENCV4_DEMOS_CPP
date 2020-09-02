@@ -90,6 +90,8 @@
                                     <listOptionValue builtIn="false" value="opencv_highgui"/>
                                     									
                                     <listOptionValue builtIn="false" value="opencv_videoio"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_photo"/>
                                     								
                                 </option>
                                 								
@@ -123,7 +125,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="src/ComposeImages.cpp|opencv_018.cpp|opencv_011.cpp|compose_images.cpp|test.cpp|DisplayImage.cpp|DisplayVideo.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="src/DisplayVideo.cpp|src/DisplayImage.cpp|src/ComposeImages.cpp|opencv_018.cpp|opencv_011.cpp|compose_images.cpp|test.cpp|DisplayImage.cpp|DisplayVideo.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

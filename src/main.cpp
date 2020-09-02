@@ -25,8 +25,8 @@ int OpencvDemo021();
 int OpencvDemo022();
 int OpencvDemo023();
 int OpencvDemo024();
-//int OpencvDemo025();
-//int OpencvDemo026();
+int OpencvDemo025();
+int OpencvDemo026();
 //int OpencvDemo027();
 //int OpencvDemo028();
 //int OpencvDemo029();
@@ -164,16 +164,16 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo024();
 		break;
 
-//	case 25:
-//		//
-//		ret = OpencvDemo025();
-//		break;
-//
-//	case 26:
-//		//
-//		ret = OpencvDemo026();
-//		break;
-//
+	case 25:
+		// 图像去噪声
+		ret = OpencvDemo025();
+		break;
+
+	case 26:
+		// 高斯双边模糊
+		ret = OpencvDemo026();
+		break;
+
 //	case 27:
 //		//
 //		ret = OpencvDemo027();
