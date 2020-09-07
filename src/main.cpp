@@ -27,8 +27,8 @@ int OpencvDemo023();
 int OpencvDemo024();
 int OpencvDemo025();
 int OpencvDemo026();
-//int OpencvDemo027();
-//int OpencvDemo028();
+int OpencvDemo027();
+int OpencvDemo028();
 //int OpencvDemo029();
 //int OpencvDemo030();
 
@@ -174,16 +174,16 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo026();
 		break;
 
-//	case 27:
-//		//
-//		ret = OpencvDemo027();
-//		break;
-//
-//	case 28:
-//		//
-//		ret = OpencvDemo028();
-//		break;
-//
+	case 27:
+		// 均值迁移模糊
+		ret = OpencvDemo027();
+		break;
+
+	case 28:
+		// 图像积分图算法
+		ret = OpencvDemo028();
+		break;
+
 //	case 29:
 //		//
 //		ret = OpencvDemo029();

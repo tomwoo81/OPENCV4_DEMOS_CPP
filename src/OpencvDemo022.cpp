@@ -5,7 +5,7 @@
 int OpencvDemo022() {
 	cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_DEBUG);
 
-	cv::Mat src = cv::imread("images/test.png");
+	cv::Mat src = cv::imread("images/snow.png");
 	if (src.empty()) {
 		CV_LOG_ERROR(CV_LOGTAG_GLOBAL, "could not load an image!");
 		return cv::Error::StsError;
