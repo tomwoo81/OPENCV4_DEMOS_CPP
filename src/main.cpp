@@ -29,8 +29,8 @@ int OpencvDemo025();
 int OpencvDemo026();
 int OpencvDemo027();
 int OpencvDemo028();
-//int OpencvDemo029();
-//int OpencvDemo030();
+int OpencvDemo029();
+int OpencvDemo030();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -184,15 +184,15 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo028();
 		break;
 
-//	case 29:
-//		//
-//		ret = OpencvDemo029();
-//		break;
-//
-//	case 30:
-//		//
-//		ret = OpencvDemo030();
-//		break;
+	case 29:
+		// 快速的图像边缘滤波算法
+		ret = OpencvDemo029();
+		break;
+
+	case 30:
+		// OpenCV自定义的滤波器
+		ret = OpencvDemo030();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
