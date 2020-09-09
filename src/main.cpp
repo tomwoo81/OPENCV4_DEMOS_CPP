@@ -33,8 +33,8 @@ int OpencvDemo029();
 int OpencvDemo030();
 int OpencvDemo031();
 int OpencvDemo032();
-//int OpencvDemo033();
-//int OpencvDemo034();
+int OpencvDemo033();
+int OpencvDemo034();
 //int OpencvDemo035();
 //int OpencvDemo036();
 //int OpencvDemo037();
@@ -214,16 +214,16 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo032();
 		break;
 
-//	case 33:
-//		//
-//		ret = OpencvDemo033();
-//		break;
-//
-//	case 34:
-//		//
-//		ret = OpencvDemo034();
-//		break;
-//
+	case 33:
+		// 图像梯度–拉普拉斯算子
+		ret = OpencvDemo033();
+		break;
+
+	case 34:
+		// 图像锐化
+		ret = OpencvDemo034();
+		break;
+
 //	case 35:
 //		//
 //		ret = OpencvDemo035();
