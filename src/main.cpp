@@ -31,6 +31,16 @@ int OpencvDemo027();
 int OpencvDemo028();
 int OpencvDemo029();
 int OpencvDemo030();
+int OpencvDemo031();
+int OpencvDemo032();
+//int OpencvDemo033();
+//int OpencvDemo034();
+//int OpencvDemo035();
+//int OpencvDemo036();
+//int OpencvDemo037();
+//int OpencvDemo038();
+//int OpencvDemo039();
+//int OpencvDemo040();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -193,6 +203,56 @@ int main(int argc, char** argv) {
 		// OpenCV自定义的滤波器
 		ret = OpencvDemo030();
 		break;
+
+	case 31:
+		// 图像梯度–Sobel算子
+		ret = OpencvDemo031();
+		break;
+
+	case 32:
+		// 图像梯度–更多梯度算子
+		ret = OpencvDemo032();
+		break;
+
+//	case 33:
+//		//
+//		ret = OpencvDemo033();
+//		break;
+//
+//	case 34:
+//		//
+//		ret = OpencvDemo034();
+//		break;
+//
+//	case 35:
+//		//
+//		ret = OpencvDemo035();
+//		break;
+//
+//	case 36:
+//		//
+//		ret = OpencvDemo036();
+//		break;
+//
+//	case 37:
+//		//
+//		ret = OpencvDemo037();
+//		break;
+//
+//	case 38:
+//		//
+//		ret = OpencvDemo038();
+//		break;
+//
+//	case 39:
+//		//
+//		ret = OpencvDemo039();
+//		break;
+//
+//	case 40:
+//		//
+//		ret = OpencvDemo040();
+//		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
