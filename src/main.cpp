@@ -35,8 +35,8 @@ int OpencvDemo031();
 int OpencvDemo032();
 int OpencvDemo033();
 int OpencvDemo034();
-//int OpencvDemo035();
-//int OpencvDemo036();
+int OpencvDemo035();
+int OpencvDemo036();
 //int OpencvDemo037();
 //int OpencvDemo038();
 //int OpencvDemo039();
@@ -224,16 +224,16 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo034();
 		break;
 
-//	case 35:
-//		//
-//		ret = OpencvDemo035();
-//		break;
-//
-//	case 36:
-//		//
-//		ret = OpencvDemo036();
-//		break;
-//
+	case 35:
+		// USM锐化增强算法
+		ret = OpencvDemo035();
+		break;
+
+	case 36:
+		// Canny边缘检测器
+		ret = OpencvDemo036();
+		break;
+
 //	case 37:
 //		//
 //		ret = OpencvDemo037();
