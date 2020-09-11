@@ -4,7 +4,6 @@
 // 视频文件的读写
 int OpencvDemo012() {
 	cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_DEBUG);
-	char str[256];
 
 	// 打开摄像头
 	// cv::VideoCapture capture(0);
@@ -19,9 +18,8 @@ int OpencvDemo012() {
 
 	cv::Size S = cv::Size((int)capture.get(cv::CAP_PROP_FRAME_WIDTH),
 		(int)capture.get(cv::CAP_PROP_FRAME_HEIGHT));
-	int fps = capture.get(cv::CAP_PROP_FPS);
-	sprintf(str, "current fps: %d", fps);
-	CV_LOG_DEBUG(CV_LOGTAG_GLOBAL, str);
+	double fps = capture.get(cv::CAP_PROP_FPS);
+	CV_LOG_DEBUG(CV_LOGTAG_GLOBAL, cv::format("current fps: %.0f", fps));
 	cv::VideoWriter writer("output/bike2.avi", cv::VideoWriter::fourcc('D', 'I', 'V', 'X'), fps, S, true);
 
 	cv::Mat frame;

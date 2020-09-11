@@ -16,10 +16,8 @@ int OpencvDemo010() {
 
 	double minVal; double maxVal; cv::Point minLoc; cv::Point maxLoc;
 	cv::minMaxLoc(src, &minVal, &maxVal, &minLoc, &maxLoc, cv::Mat());
-	sprintf(str, "min: %.2f, max: %.2f", minVal, maxVal);
-	CV_LOG_INFO(CV_LOGTAG_GLOBAL, str);
-	sprintf(str, "min loc: (%d, %d), max loc: (%d, %d)", minLoc.x, minLoc.y, maxLoc.x, maxLoc.y);
-	CV_LOG_INFO(CV_LOGTAG_GLOBAL, str);
+	CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("min: %.2f, max: %.2f", minVal, maxVal));
+	CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("min loc: (%d, %d), max loc: (%d, %d)", minLoc.x, minLoc.y, maxLoc.x, maxLoc.y));
 
 	// 彩色图像 三通道的 均值与标准差
 	src = cv::imread("images/test.png");
@@ -29,12 +27,9 @@ int OpencvDemo010() {
 	}
 	cv::Mat means, stddevs;
 	cv::meanStdDev(src, means, stddevs);
-	sprintf(str, "blue channel ->> mean: %.2f, stddev: %.2f", means.at<double>(0, 0), stddevs.at<double>(0, 0));
-	CV_LOG_INFO(CV_LOGTAG_GLOBAL, str);
-	sprintf(str, "green channel ->> mean: %.2f, stddev: %.2f", means.at<double>(1, 0), stddevs.at<double>(1, 0));
-	CV_LOG_INFO(CV_LOGTAG_GLOBAL, str);
-	sprintf(str, "red channel ->> mean: %.2f, stddev: %.2f", means.at<double>(2, 0), stddevs.at<double>(2, 0));
-	CV_LOG_INFO(CV_LOGTAG_GLOBAL, str);
+	CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("blue channel ->> mean: %.2f, stddev: %.2f", means.at<double>(0, 0), stddevs.at<double>(0, 0)));
+	CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("green channel ->> mean: %.2f, stddev: %.2f", means.at<double>(1, 0), stddevs.at<double>(1, 0)));
+	CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format(str, "red channel ->> mean: %.2f, stddev: %.2f", means.at<double>(2, 0), stddevs.at<double>(2, 0)));
 
 	cv::waitKey(0);
 

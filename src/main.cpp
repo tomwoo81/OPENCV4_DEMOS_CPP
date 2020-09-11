@@ -37,8 +37,8 @@ int OpencvDemo033();
 int OpencvDemo034();
 int OpencvDemo035();
 int OpencvDemo036();
-//int OpencvDemo037();
-//int OpencvDemo038();
+int OpencvDemo037();
+int OpencvDemo038();
 //int OpencvDemo039();
 //int OpencvDemo040();
 
@@ -234,16 +234,16 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo036();
 		break;
 
-//	case 37:
-//		//
-//		ret = OpencvDemo037();
-//		break;
-//
-//	case 38:
-//		//
-//		ret = OpencvDemo038();
-//		break;
-//
+	case 37:
+		// 图像金字塔
+		ret = OpencvDemo037();
+		break;
+
+	case 38:
+		// 拉普拉斯金字塔
+		ret = OpencvDemo038();
+		break;
+
 //	case 39:
 //		//
 //		ret = OpencvDemo039();

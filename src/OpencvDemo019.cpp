@@ -4,7 +4,6 @@
 // 图像直方图比较
 int OpencvDemo019() {
 	cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_DEBUG);
-	char str[256];
 
 	cv::Mat src1 = cv::imread("images/m1.png");
 	cv::Mat src2 = cv::imread("images/m2.png");
@@ -47,8 +46,7 @@ int OpencvDemo019() {
 		int compare_method = i;
 		double src1_src2 = cv::compareHist(hist1, hist2, compare_method);
 		double src3_src4 = cv::compareHist(hist3, hist4, compare_method);
-		sprintf(str, "Method [%d]: src1_src2: %f, src3_src4: %f", i, src1_src2, src3_src4);
-		CV_LOG_INFO(CV_LOGTAG_GLOBAL, str);
+		CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("Method [%d]: src1_src2: %f, src3_src4: %f", i, src1_src2, src3_src4));
 	}
 
 	cv::waitKey(0);

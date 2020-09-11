@@ -4,7 +4,6 @@
 // 快速的图像边缘滤波算法
 int OpencvDemo029() {
 	cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_DEBUG);
-	char str[256];
 
 	cv::Mat src = cv::imread("images/example.png");
 	if (src.empty()) {
@@ -20,8 +19,7 @@ int OpencvDemo029() {
 
 	int64 end = cv::getTickCount();
 	double time = (end - start) / (freq / 1000);
-	sprintf(str, "time consumed: %.3f ms", time);
-	CV_LOG_DEBUG(CV_LOGTAG_GLOBAL, str);
+	CV_LOG_DEBUG(CV_LOGTAG_GLOBAL, cv::format("time consumed: %.3f ms", time));
 
 	int h = src.rows;
 	int w = src.cols;
