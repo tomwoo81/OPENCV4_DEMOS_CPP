@@ -39,8 +39,8 @@ int OpencvDemo035();
 int OpencvDemo036();
 int OpencvDemo037();
 int OpencvDemo038();
-//int OpencvDemo039();
-//int OpencvDemo040();
+int OpencvDemo039();
+int OpencvDemo040();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -244,15 +244,15 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo038();
 		break;
 
-//	case 39:
-//		//
-//		ret = OpencvDemo039();
-//		break;
-//
-//	case 40:
-//		//
-//		ret = OpencvDemo040();
-//		break;
+	case 39:
+		// 图像模板匹配
+		ret = OpencvDemo039();
+		break;
+
+	case 40:
+		// 二值图像介绍
+		ret = OpencvDemo040();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
