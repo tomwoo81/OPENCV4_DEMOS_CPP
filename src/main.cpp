@@ -41,6 +41,16 @@ int OpencvDemo037();
 int OpencvDemo038();
 int OpencvDemo039();
 int OpencvDemo040();
+int OpencvDemo041();
+//int OpencvDemo042();
+//int OpencvDemo043();
+//int OpencvDemo044();
+//int OpencvDemo045();
+//int OpencvDemo046();
+//int OpencvDemo047();
+//int OpencvDemo048();
+//int OpencvDemo049();
+//int OpencvDemo050();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -253,6 +263,56 @@ int main(int argc, char** argv) {
 		// 二值图像介绍
 		ret = OpencvDemo040();
 		break;
+
+	case 41:
+		// OpenCV中的基本阈值操作
+		ret = OpencvDemo041();
+		break;
+
+//	case 42:
+//		// xxxx
+//		ret = OpencvDemo042();
+//		break;
+//
+//	case 43:
+//		// xxxx
+//		ret = OpencvDemo043();
+//		break;
+//
+//	case 44:
+//		// xxxx
+//		ret = OpencvDemo044();
+//		break;
+//
+//	case 45:
+//		// xxxx
+//		ret = OpencvDemo045();
+//		break;
+//
+//	case 46:
+//		// xxxx
+//		ret = OpencvDemo046();
+//		break;
+//
+//	case 47:
+//		// xxxx
+//		ret = OpencvDemo047();
+//		break;
+//
+//	case 48:
+//		// xxxx
+//		ret = OpencvDemo048();
+//		break;
+//
+//	case 49:
+//		// xxxx
+//		ret = OpencvDemo049();
+//		break;
+//
+//	case 50:
+//		// xxxx
+//		ret = OpencvDemo050();
+//		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
