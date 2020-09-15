@@ -29,16 +29,6 @@ int OpencvDemo041() {
 		cv::imshow(cv::format("thresholding - type %d", i), dst);
 	}
 
-	double ret;
-
-	ret = cv::threshold(gray, dst, t, 255, cv::THRESH_OTSU);
-	CV_LOG_DEBUG(CV_LOGTAG_GLOBAL, cv::format("threshold - otsu: %.0f", ret));
-	cv::imshow("thresholding - otsu", dst);
-
-	ret = cv::threshold(gray, dst, t, 255, cv::THRESH_TRIANGLE);
-	CV_LOG_DEBUG(CV_LOGTAG_GLOBAL, cv::format("threshold - triangle: %.0f", ret));
-	cv::imshow("thresholding - triangle", dst);
-
 	cv::waitKey(0);
 
 	return cv::Error::StsOk;

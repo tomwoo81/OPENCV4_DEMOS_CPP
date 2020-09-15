@@ -42,7 +42,7 @@ int OpencvDemo038();
 int OpencvDemo039();
 int OpencvDemo040();
 int OpencvDemo041();
-//int OpencvDemo042();
+int OpencvDemo042();
 //int OpencvDemo043();
 //int OpencvDemo044();
 //int OpencvDemo045();
@@ -269,11 +269,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo041();
 		break;
 
-//	case 42:
-//		// xxxx
-//		ret = OpencvDemo042();
-//		break;
-//
+	case 42:
+		// OTSU二值寻找算法
+		ret = OpencvDemo042();
+		break;
+
 //	case 43:
 //		// xxxx
 //		ret = OpencvDemo043();
