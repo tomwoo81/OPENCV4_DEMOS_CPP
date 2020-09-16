@@ -43,7 +43,7 @@ int OpencvDemo039();
 int OpencvDemo040();
 int OpencvDemo041();
 int OpencvDemo042();
-//int OpencvDemo043();
+int OpencvDemo043();
 //int OpencvDemo044();
 //int OpencvDemo045();
 //int OpencvDemo046();
@@ -274,11 +274,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo042();
 		break;
 
-//	case 43:
-//		// xxxx
-//		ret = OpencvDemo043();
-//		break;
-//
+	case 43:
+		// TRIANGLE二值寻找算法
+		ret = OpencvDemo043();
+		break;
+
 //	case 44:
 //		// xxxx
 //		ret = OpencvDemo044();
