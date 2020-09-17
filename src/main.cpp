@@ -44,7 +44,7 @@ int OpencvDemo040();
 int OpencvDemo041();
 int OpencvDemo042();
 int OpencvDemo043();
-//int OpencvDemo044();
+int OpencvDemo044();
 //int OpencvDemo045();
 //int OpencvDemo046();
 //int OpencvDemo047();
@@ -279,11 +279,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo043();
 		break;
 
-//	case 44:
-//		// xxxx
-//		ret = OpencvDemo044();
-//		break;
-//
+	case 44:
+		// 自适应阈值算法
+		ret = OpencvDemo044();
+		break;
+
 //	case 45:
 //		// xxxx
 //		ret = OpencvDemo045();
