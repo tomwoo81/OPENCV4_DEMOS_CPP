@@ -45,7 +45,7 @@ int OpencvDemo041();
 int OpencvDemo042();
 int OpencvDemo043();
 int OpencvDemo044();
-//int OpencvDemo045();
+int OpencvDemo045();
 //int OpencvDemo046();
 //int OpencvDemo047();
 //int OpencvDemo048();
@@ -284,11 +284,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo044();
 		break;
 
-//	case 45:
-//		// xxxx
-//		ret = OpencvDemo045();
-//		break;
-//
+	case 45:
+		// 图像二值化与去噪
+		ret = OpencvDemo045();
+		break;
+
 //	case 46:
 //		// xxxx
 //		ret = OpencvDemo046();

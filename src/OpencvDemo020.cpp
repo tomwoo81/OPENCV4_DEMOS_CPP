@@ -1,7 +1,7 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-void backProjection_demo(const cv::Mat& image, const cv::Mat& model);
+static void backProjection_demo(const cv::Mat& image, const cv::Mat& model);
 
 // 图像直方图反向投影
 int OpencvDemo020() {
@@ -24,7 +24,7 @@ int OpencvDemo020() {
 	return cv::Error::StsOk;
 }
 
-void backProjection_demo(const cv::Mat& image, const cv::Mat& model) {
+static void backProjection_demo(const cv::Mat& image, const cv::Mat& model) {
 	cv::Mat image_hsv, model_hsv;
 	cv::cvtColor(image, image_hsv, cv::COLOR_BGR2HSV);
 	cv::cvtColor(model, model_hsv, cv::COLOR_BGR2HSV);

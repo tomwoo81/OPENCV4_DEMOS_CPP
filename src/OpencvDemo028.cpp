@@ -1,8 +1,8 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-void blur_demo(const cv::Mat& src, const cv::Mat& sum, cv::Mat& dst);
-int get_block_sum(const cv::Mat& sum, const int x1, const int y1, const int x2, const int y2, const int i);
+static void blur_demo(const cv::Mat& src, const cv::Mat& sum, cv::Mat& dst);
+static int get_block_sum(const cv::Mat& sum, const int x1, const int y1, const int x2, const int y2, const int i);
 
 // 图像积分图算法
 int OpencvDemo028() {
@@ -35,7 +35,7 @@ int OpencvDemo028() {
 	return cv::Error::StsOk;
 }
 
-void blur_demo(const cv::Mat& src, const cv::Mat& sum, cv::Mat& dst) {
+static void blur_demo(const cv::Mat& src, const cv::Mat& sum, cv::Mat& dst) {
 	int w = src.cols;
 	int h = src.rows;
 	int ch = src.channels();
@@ -61,7 +61,7 @@ void blur_demo(const cv::Mat& src, const cv::Mat& sum, cv::Mat& dst) {
 	}
 }
 
-int get_block_sum(const cv::Mat& sum, const int x1, const int y1, const int x2, const int y2, const int i) {
+static int get_block_sum(const cv::Mat& sum, const int x1, const int y1, const int x2, const int y2, const int i) {
 	int tl = sum.at<cv::Vec3i>(y1 + 1, x1 + 1)[i];
 	int tr = sum.at<cv::Vec3i>(y1 + 1, x2 + 1)[i];
 	int bl = sum.at<cv::Vec3i>(y2 + 1, x1 + 1)[i];

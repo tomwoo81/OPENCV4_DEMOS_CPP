@@ -1,7 +1,7 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-void drawHistogram(const cv::Mat& image);
+static void drawHistogram(const cv::Mat& image);
 
 // 图像直方图
 int OpencvDemo017() {
@@ -22,7 +22,7 @@ int OpencvDemo017() {
 	return cv::Error::StsOk;
 }
 
-void drawHistogram(const cv::Mat& image) {
+static void drawHistogram(const cv::Mat& image) {
 	// 定义参数变量
 	const int bins[1] = { 256 };
 	float hranges[2] = { 0, 256 };

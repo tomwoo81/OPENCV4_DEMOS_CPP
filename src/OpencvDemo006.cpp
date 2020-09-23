@@ -1,7 +1,7 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-void customColorMap(cv::Mat& image);
+static void customColorMap(cv::Mat& image);
 
 // LUT的作用与用法
 int OpencvDemo006() {
@@ -28,7 +28,7 @@ int OpencvDemo006() {
 	return cv::Error::StsOk;
 }
 
-void customColorMap(cv::Mat& image) {
+static void customColorMap(cv::Mat& image) {
 	int lut[256];
 	for (int i = 0; i < 256; i++) {
 		if (i < 127)
