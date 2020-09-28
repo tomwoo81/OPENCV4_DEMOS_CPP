@@ -47,7 +47,7 @@ int OpencvDemo043();
 int OpencvDemo044();
 int OpencvDemo045();
 int OpencvDemo046();
-//int OpencvDemo047();
+int OpencvDemo047();
 //int OpencvDemo048();
 //int OpencvDemo049();
 //int OpencvDemo050();
@@ -294,11 +294,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo046();
 		break;
 
-//	case 47:
-//		// xxxx
-//		ret = OpencvDemo047();
-//		break;
-//
+	case 47:
+		// 二值图像连通组件状态统计
+		ret = OpencvDemo047();
+		break;
+
 //	case 48:
 //		// xxxx
 //		ret = OpencvDemo048();
