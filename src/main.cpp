@@ -48,7 +48,7 @@ int OpencvDemo044();
 int OpencvDemo045();
 int OpencvDemo046();
 int OpencvDemo047();
-//int OpencvDemo048();
+int OpencvDemo048();
 //int OpencvDemo049();
 //int OpencvDemo050();
 
@@ -299,11 +299,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo047();
 		break;
 
-//	case 48:
-//		// xxxx
-//		ret = OpencvDemo048();
-//		break;
-//
+	case 48:
+		// 二值图像分析—轮廓发现
+		ret = OpencvDemo048();
+		break;
+
 //	case 49:
 //		// xxxx
 //		ret = OpencvDemo049();

@@ -20,7 +20,7 @@ int OpencvDemo006() {
 	cv::imshow("colorMap", dst);
 
 	cv::cvtColor(src, gray, cv::COLOR_BGR2GRAY);
-	imshow("gray", gray);
+	cv::imshow("gray", gray);
 	customColorMap(gray);
 
 	cv::waitKey(0);
