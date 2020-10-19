@@ -49,7 +49,7 @@ int OpencvDemo045();
 int OpencvDemo046();
 int OpencvDemo047();
 int OpencvDemo048();
-//int OpencvDemo049();
+int OpencvDemo049();
 //int OpencvDemo050();
 
 int main(int argc, char** argv) {
@@ -304,11 +304,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo048();
 		break;
 
-//	case 49:
-//		// xxxx
-//		ret = OpencvDemo049();
-//		break;
-//
+	case 49:
+		// 二值图像分析—轮廓外接矩形
+		ret = OpencvDemo049();
+		break;
+
 //	case 50:
 //		// xxxx
 //		ret = OpencvDemo050();
