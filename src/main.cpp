@@ -50,7 +50,7 @@ int OpencvDemo046();
 int OpencvDemo047();
 int OpencvDemo048();
 int OpencvDemo049();
-//int OpencvDemo050();
+int OpencvDemo050();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -309,10 +309,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo049();
 		break;
 
-//	case 50:
-//		// xxxx
-//		ret = OpencvDemo050();
-//		break;
+	case 50:
+		// 二值图像分析—轮廓面积与弧长
+		ret = OpencvDemo050();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
