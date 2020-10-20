@@ -51,6 +51,16 @@ int OpencvDemo047();
 int OpencvDemo048();
 int OpencvDemo049();
 int OpencvDemo050();
+int OpencvDemo051();
+//int OpencvDemo052();
+//int OpencvDemo053();
+//int OpencvDemo054();
+//int OpencvDemo055();
+//int OpencvDemo056();
+//int OpencvDemo057();
+//int OpencvDemo058();
+//int OpencvDemo059();
+//int OpencvDemo060();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -313,6 +323,56 @@ int main(int argc, char** argv) {
 		// 二值图像分析—轮廓面积与弧长
 		ret = OpencvDemo050();
 		break;
+
+	case 51:
+		// 二值图像分析—使用轮廓逼近
+		ret = OpencvDemo051();
+		break;
+
+//	case 52:
+//		// XXX
+//		ret = OpencvDemo052();
+//		break;
+//
+//	case 53:
+//		// XXX
+//		ret = OpencvDemo053();
+//		break;
+//
+//	case 54:
+//		// XXX
+//		ret = OpencvDemo054();
+//		break;
+//
+//	case 55:
+//		// XXX
+//		ret = OpencvDemo055();
+//		break;
+//
+//	case 56:
+//		// XXX
+//		ret = OpencvDemo056();
+//		break;
+//
+//	case 57:
+//		// XXX
+//		ret = OpencvDemo057();
+//		break;
+//
+//	case 58:
+//		// XXX
+//		ret = OpencvDemo058();
+//		break;
+//
+//	case 59:
+//		// XXX
+//		ret = OpencvDemo059();
+//		break;
+//
+//	case 60:
+//		// XXX
+//		ret = OpencvDemo060();
+//		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;

@@ -19,7 +19,7 @@ int OpencvDemo049() {
 	cv::Mat k = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3), cv::Point(-1, -1));
 	cv::dilate(binary, binary, k);
 
-	// 轮廓发现与绘制
+	// 轮廓发现
 	std::vector<std::vector<cv::Point>> contours;
 	std::vector<cv::Vec4i> hierarchy;
 
