@@ -52,7 +52,7 @@ int OpencvDemo048();
 int OpencvDemo049();
 int OpencvDemo050();
 int OpencvDemo051();
-//int OpencvDemo052();
+int OpencvDemo052();
 //int OpencvDemo053();
 //int OpencvDemo054();
 //int OpencvDemo055();
@@ -329,11 +329,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo051();
 		break;
 
-//	case 52:
-//		// XXX
-//		ret = OpencvDemo052();
-//		break;
-//
+	case 52:
+		// 二值图像分析—用几何矩计算轮廓中心与横纵比过滤
+		ret = OpencvDemo052();
+		break;
+
 //	case 53:
 //		// XXX
 //		ret = OpencvDemo053();
