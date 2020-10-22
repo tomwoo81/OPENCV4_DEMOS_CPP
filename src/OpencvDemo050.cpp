@@ -29,7 +29,7 @@ int OpencvDemo050() {
 	cv::Mat dst2 = src.clone();
 
 	for (auto& contour: contours) {
-		// 面积过滤
+		// 面积与弧长过滤
 		double area = cv::contourArea(contour);
 		double arcLen = cv::arcLength(contour, true);
 		if (area < 100 || arcLen < 100) {

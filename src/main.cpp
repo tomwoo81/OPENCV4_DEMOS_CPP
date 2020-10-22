@@ -53,7 +53,7 @@ int OpencvDemo049();
 int OpencvDemo050();
 int OpencvDemo051();
 int OpencvDemo052();
-//int OpencvDemo053();
+int OpencvDemo053();
 //int OpencvDemo054();
 //int OpencvDemo055();
 //int OpencvDemo056();
@@ -334,11 +334,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo052();
 		break;
 
-//	case 53:
-//		// XXX
-//		ret = OpencvDemo053();
-//		break;
-//
+	case 53:
+		// 二值图像分析—Hu矩实现轮廓匹配
+		ret = OpencvDemo053();
+		break;
+
 //	case 54:
 //		// XXX
 //		ret = OpencvDemo054();
