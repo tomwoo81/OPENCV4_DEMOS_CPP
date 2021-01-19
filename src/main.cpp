@@ -55,7 +55,7 @@ int OpencvDemo051();
 int OpencvDemo052();
 int OpencvDemo053();
 int OpencvDemo054();
-//int OpencvDemo055();
+int OpencvDemo055();
 //int OpencvDemo056();
 //int OpencvDemo057();
 //int OpencvDemo058();
@@ -344,11 +344,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo054();
 		break;
 
-//	case 55:
-//		// XXX
-//		ret = OpencvDemo055();
-//		break;
-//
+	case 55:
+		// 二值图像分析—凸包检测
+		ret = OpencvDemo055();
+		break;
+
 //	case 56:
 //		// XXX
 //		ret = OpencvDemo056();

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(OPENCV4_DEMOS_CPP VERSION 0.5.4)
+project(OPENCV4_DEMOS_CPP VERSION 0.5.5)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 aux_source_directory(src SOURCE_FILES)
