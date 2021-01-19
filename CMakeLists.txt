@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(OPENCV4_DEMOS_CPP VERSION 0.5.4)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+aux_source_directory(src SOURCE_FILES)
+list(REMOVE_ITEM SOURCE_FILES src/ComposeImages.cpp)
+add_executable(OPENCV4_DEMOS_CPP ${SOURCE_FILES})
+target_link_libraries(OPENCV4_DEMOS_CPP ${OpenCV_LIBS})

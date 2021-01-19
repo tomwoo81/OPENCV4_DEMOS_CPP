@@ -54,7 +54,7 @@ int OpencvDemo050();
 int OpencvDemo051();
 int OpencvDemo052();
 int OpencvDemo053();
-//int OpencvDemo054();
+int OpencvDemo054();
 //int OpencvDemo055();
 //int OpencvDemo056();
 //int OpencvDemo057();
@@ -339,11 +339,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo053();
 		break;
 
-//	case 54:
-//		// XXX
-//		ret = OpencvDemo054();
-//		break;
-//
+	case 54:
+		// 二值图像分析—对轮廓圆与椭圆拟合
+		ret = OpencvDemo054();
+		break;
+
 //	case 55:
 //		// XXX
 //		ret = OpencvDemo055();
