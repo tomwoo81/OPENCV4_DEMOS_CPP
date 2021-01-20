@@ -56,7 +56,7 @@ int OpencvDemo052();
 int OpencvDemo053();
 int OpencvDemo054();
 int OpencvDemo055();
-//int OpencvDemo056();
+int OpencvDemo056();
 //int OpencvDemo057();
 //int OpencvDemo058();
 //int OpencvDemo059();
@@ -349,11 +349,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo055();
 		break;
 
-//	case 56:
-//		// XXX
-//		ret = OpencvDemo056();
-//		break;
-//
+	case 56:
+		// 二值图像分析—直线拟合与极值点寻找
+		ret = OpencvDemo056();
+		break;
+
 //	case 57:
 //		// XXX
 //		ret = OpencvDemo057();
