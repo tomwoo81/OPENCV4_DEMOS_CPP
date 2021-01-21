@@ -58,7 +58,7 @@ int OpencvDemo054();
 int OpencvDemo055();
 int OpencvDemo056();
 int OpencvDemo057();
-//int OpencvDemo058();
+int OpencvDemo058();
 //int OpencvDemo059();
 //int OpencvDemo060();
 
@@ -359,11 +359,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo057();
 		break;
 
-//	case 58:
-//		// XXX
-//		ret = OpencvDemo058();
-//		break;
-//
+	case 58:
+		// 二值图像分析—寻找最大内接圆
+		ret = OpencvDemo058();
+		break;
+
 //	case 59:
 //		// XXX
 //		ret = OpencvDemo059();
