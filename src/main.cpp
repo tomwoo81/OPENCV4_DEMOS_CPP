@@ -59,7 +59,7 @@ int OpencvDemo055();
 int OpencvDemo056();
 int OpencvDemo057();
 int OpencvDemo058();
-//int OpencvDemo059();
+int OpencvDemo059();
 //int OpencvDemo060();
 
 int main(int argc, char** argv) {
@@ -364,11 +364,11 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo058();
 		break;
 
-//	case 59:
-//		// XXX
-//		ret = OpencvDemo059();
-//		break;
-//
+	case 59:
+		// 二值图像分析—霍夫直线检测
+		ret = OpencvDemo059();
+		break;
+
 //	case 60:
 //		// XXX
 //		ret = OpencvDemo060();
