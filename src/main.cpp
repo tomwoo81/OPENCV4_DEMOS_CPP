@@ -60,7 +60,7 @@ int OpencvDemo056();
 int OpencvDemo057();
 int OpencvDemo058();
 int OpencvDemo059();
-//int OpencvDemo060();
+int OpencvDemo060();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -369,10 +369,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo059();
 		break;
 
-//	case 60:
-//		// XXX
-//		ret = OpencvDemo060();
-//		break;
+	case 60:
+		// 二值图像分析—霍夫直线检测二
+		ret = OpencvDemo060();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
