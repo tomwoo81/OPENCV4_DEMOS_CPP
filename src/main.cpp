@@ -61,6 +61,16 @@ int OpencvDemo057();
 int OpencvDemo058();
 int OpencvDemo059();
 int OpencvDemo060();
+int OpencvDemo061();
+// int OpencvDemo062();
+// int OpencvDemo063();
+// int OpencvDemo064();
+// int OpencvDemo065();
+// int OpencvDemo066();
+// int OpencvDemo067();
+// int OpencvDemo068();
+// int OpencvDemo069();
+// int OpencvDemo070();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -373,6 +383,56 @@ int main(int argc, char** argv) {
 		// 二值图像分析—霍夫直线检测二
 		ret = OpencvDemo060();
 		break;
+
+	case 61:
+		// 二值图像分析—霍夫圆检测
+		ret = OpencvDemo061();
+		break;
+
+	// case 62:
+	// 	// 
+	// 	ret = OpencvDemo062();
+	// 	break;
+
+	// case 63:
+	// 	// 
+	// 	ret = OpencvDemo063();
+	// 	break;
+
+	// case 64:
+	// 	// 
+	// 	ret = OpencvDemo064();
+	// 	break;
+
+	// case 65:
+	// 	// 
+	// 	ret = OpencvDemo065();
+	// 	break;
+
+	// case 66:
+	// 	// 
+	// 	ret = OpencvDemo066();
+	// 	break;
+
+	// case 67:
+	// 	// 
+	// 	ret = OpencvDemo067();
+	// 	break;
+
+	// case 68:
+	// 	// 
+	// 	ret = OpencvDemo068();
+	// 	break;
+
+	// case 69:
+	// 	// 
+	// 	ret = OpencvDemo069();
+	// 	break;
+
+	// case 70:
+	// 	// 
+	// 	ret = OpencvDemo070();
+	// 	break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
