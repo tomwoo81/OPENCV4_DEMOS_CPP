@@ -62,8 +62,8 @@ int OpencvDemo058();
 int OpencvDemo059();
 int OpencvDemo060();
 int OpencvDemo061();
-// int OpencvDemo062();
-// int OpencvDemo063();
+int OpencvDemo062();
+int OpencvDemo063();
 // int OpencvDemo064();
 // int OpencvDemo065();
 // int OpencvDemo066();
@@ -389,15 +389,15 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo061();
 		break;
 
-	// case 62:
-	// 	// 
-	// 	ret = OpencvDemo062();
-	// 	break;
+	case 62:
+		// 图像形态学—膨胀与腐蚀
+		ret = OpencvDemo062();
+		break;
 
-	// case 63:
-	// 	// 
-	// 	ret = OpencvDemo063();
-	// 	break;
+	case 63:
+		// 图像形态学—膨胀与腐蚀二
+		ret = OpencvDemo063();
+		break;
 
 	// case 64:
 	// 	// 
