@@ -64,8 +64,8 @@ int OpencvDemo060();
 int OpencvDemo061();
 int OpencvDemo062();
 int OpencvDemo063();
-// int OpencvDemo064();
-// int OpencvDemo065();
+int OpencvDemo064();
+int OpencvDemo065();
 // int OpencvDemo066();
 // int OpencvDemo067();
 // int OpencvDemo068();
@@ -399,15 +399,15 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo063();
 		break;
 
-	// case 64:
-	// 	// 
-	// 	ret = OpencvDemo064();
-	// 	break;
+	case 64:
+		// 图像形态学–开操作
+		ret = OpencvDemo064();
+		break;
 
-	// case 65:
-	// 	// 
-	// 	ret = OpencvDemo065();
-	// 	break;
+	case 65:
+		// 图像形态学–闭操作
+		ret = OpencvDemo065();
+		break;
 
 	// case 66:
 	// 	// 
