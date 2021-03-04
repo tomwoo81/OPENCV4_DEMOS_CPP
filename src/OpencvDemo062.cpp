@@ -12,7 +12,7 @@ int OpencvDemo062() {
 	}
 
 	// 定义结构元素 3x3大小矩形
-	cv::Mat se = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3), cv::Point(-1, -1));
+	cv::Mat se = cv::Mat::ones(cv::Size(3, 3), CV_8U);
 
     cv::Mat dilate, erode;
 
