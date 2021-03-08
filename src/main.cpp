@@ -66,7 +66,7 @@ int OpencvDemo062();
 int OpencvDemo063();
 int OpencvDemo064();
 int OpencvDemo065();
-// int OpencvDemo066();
+int OpencvDemo066();
 // int OpencvDemo067();
 // int OpencvDemo068();
 // int OpencvDemo069();
@@ -409,10 +409,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo065();
 		break;
 
-	// case 66:
-	// 	// 
-	// 	ret = OpencvDemo066();
-	// 	break;
+	case 66:
+		// 图像形态学—开闭操作时候结构元素应用演示
+		ret = OpencvDemo066();
+		break;
 
 	// case 67:
 	// 	// 
