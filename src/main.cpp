@@ -69,7 +69,7 @@ int OpencvDemo065();
 int OpencvDemo066();
 int OpencvDemo067();
 int OpencvDemo068();
-// int OpencvDemo069();
+int OpencvDemo069();
 // int OpencvDemo070();
 
 int main(int argc, char** argv) {
@@ -424,10 +424,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo068();
 		break;
 
-	// case 69:
-	// 	// 
-	// 	ret = OpencvDemo069();
-	// 	break;
+	case 69:
+		// 图像形态学—图像梯度
+		ret = OpencvDemo069();
+		break;
 
 	// case 70:
 	// 	// 
