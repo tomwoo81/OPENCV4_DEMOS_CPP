@@ -71,6 +71,16 @@ int OpencvDemo067();
 int OpencvDemo068();
 int OpencvDemo069();
 int OpencvDemo070();
+int OpencvDemo071();
+// int OpencvDemo072();
+// int OpencvDemo073();
+// int OpencvDemo074();
+// int OpencvDemo075();
+// int OpencvDemo076();
+// int OpencvDemo077();
+// int OpencvDemo078();
+// int OpencvDemo079();
+// int OpencvDemo080();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -433,6 +443,56 @@ int main(int argc, char** argv) {
 		// 形态学应用—用基本梯度实现轮廓分析
 		ret = OpencvDemo070();
 		break;
+
+	case 71:
+		// 形态学操作—击中击不中
+		ret = OpencvDemo071();
+		break;
+
+	// case 72:
+	// 	// 
+	// 	ret = OpencvDemo072();
+	// 	break;
+
+	// case 73:
+	// 	// 
+	// 	ret = OpencvDemo073();
+	// 	break;
+
+	// case 74:
+	// 	// 
+	// 	ret = OpencvDemo074();
+	// 	break;
+
+	// case 75:
+	// 	// 
+	// 	ret = OpencvDemo075();
+	// 	break;
+
+	// case 76:
+	// 	// 
+	// 	ret = OpencvDemo076();
+	// 	break;
+
+	// case 77:
+	// 	// 
+	// 	ret = OpencvDemo077();
+	// 	break;
+
+	// case 78:
+	// 	// 
+	// 	ret = OpencvDemo078();
+	// 	break;
+
+	// case 79:
+	// 	// 
+	// 	ret = OpencvDemo079();
+	// 	break;
+
+	// case 80:
+	// 	// 
+	// 	ret = OpencvDemo080();
+	// 	break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
