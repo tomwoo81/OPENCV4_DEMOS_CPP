@@ -72,8 +72,8 @@ int OpencvDemo068();
 int OpencvDemo069();
 int OpencvDemo070();
 int OpencvDemo071();
-// int OpencvDemo072();
-// int OpencvDemo073();
+int OpencvDemo072();
+int OpencvDemo073();
 // int OpencvDemo074();
 // int OpencvDemo075();
 // int OpencvDemo076();
@@ -449,15 +449,15 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo071();
 		break;
 
-	// case 72:
-	// 	// 
-	// 	ret = OpencvDemo072();
-	// 	break;
+	case 72:
+		// 二值图像分析—缺陷检测一
+		ret = OpencvDemo072();
+		break;
 
-	// case 73:
-	// 	// 
-	// 	ret = OpencvDemo073();
-	// 	break;
+	case 73:
+		// 二值图像分析—缺陷检测二
+		ret = OpencvDemo073();
+		break;
 
 	// case 74:
 	// 	// 
