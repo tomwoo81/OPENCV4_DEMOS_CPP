@@ -74,7 +74,7 @@ int OpencvDemo070();
 int OpencvDemo071();
 int OpencvDemo072();
 int OpencvDemo073();
-// int OpencvDemo074();
+int OpencvDemo074();
 // int OpencvDemo075();
 // int OpencvDemo076();
 // int OpencvDemo077();
@@ -459,10 +459,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo073();
 		break;
 
-	// case 74:
-	// 	// 
-	// 	ret = OpencvDemo074();
-	// 	break;
+	case 74:
+		// 二值图像分析—提取最大轮廓与编码关键点
+		ret = OpencvDemo074();
+		break;
 
 	// case 75:
 	// 	// 
