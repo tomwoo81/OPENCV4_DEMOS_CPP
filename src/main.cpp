@@ -75,7 +75,7 @@ int OpencvDemo071();
 int OpencvDemo072();
 int OpencvDemo073();
 int OpencvDemo074();
-// int OpencvDemo075();
+int OpencvDemo075();
 // int OpencvDemo076();
 // int OpencvDemo077();
 // int OpencvDemo078();
@@ -464,10 +464,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo074();
 		break;
 
-	// case 75:
-	// 	// 
-	// 	ret = OpencvDemo075();
-	// 	break;
+	case 75:
+		// 图像去水印/修复
+		ret = OpencvDemo075();
+		break;
 
 	// case 76:
 	// 	// 
