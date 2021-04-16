@@ -76,7 +76,7 @@ int OpencvDemo072();
 int OpencvDemo073();
 int OpencvDemo074();
 int OpencvDemo075();
-// int OpencvDemo076();
+int OpencvDemo076();
 // int OpencvDemo077();
 // int OpencvDemo078();
 // int OpencvDemo079();
@@ -469,10 +469,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo075();
 		break;
 
-	// case 76:
-	// 	// 
-	// 	ret = OpencvDemo076();
-	// 	break;
+	case 76:
+		// 图像透视变换应用
+		ret = OpencvDemo076();
+		break;
 
 	// case 77:
 	// 	// 
