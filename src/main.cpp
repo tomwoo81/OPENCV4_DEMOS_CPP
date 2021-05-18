@@ -77,7 +77,7 @@ int OpencvDemo073();
 int OpencvDemo074();
 int OpencvDemo075();
 int OpencvDemo076();
-// int OpencvDemo077();
+int OpencvDemo077();
 // int OpencvDemo078();
 // int OpencvDemo079();
 // int OpencvDemo080();
@@ -474,10 +474,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo076();
 		break;
 
-	// case 77:
-	// 	// 
-	// 	ret = OpencvDemo077();
-	// 	break;
+	case 77:
+		// 视频读写与处理
+		ret = OpencvDemo077();
+		break;
 
 	// case 78:
 	// 	// 
