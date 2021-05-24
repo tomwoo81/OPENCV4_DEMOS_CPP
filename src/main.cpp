@@ -78,7 +78,7 @@ int OpencvDemo074();
 int OpencvDemo075();
 int OpencvDemo076();
 int OpencvDemo077();
-// int OpencvDemo078();
+int OpencvDemo078();
 // int OpencvDemo079();
 // int OpencvDemo080();
 
@@ -479,10 +479,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo077();
 		break;
 
-	// case 78:
-	// 	// 
-	// 	ret = OpencvDemo078();
-	// 	break;
+	case 78:
+		// 识别与跟踪视频中的特定颜色对象
+		ret = OpencvDemo078();
+		break;
 
 	// case 79:
 	// 	// 
