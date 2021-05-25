@@ -21,7 +21,8 @@ int OpencvDemo078() {
                                                 width, height, fps, num_of_frames));
 
 	cv::Mat src, dst, result;
-	cv::namedWindow("video processing", cv::WINDOW_AUTOSIZE);
+	std::string winName = "object recognition & tracking in video";
+	cv::namedWindow(winName, cv::WINDOW_AUTOSIZE);
 
 	while (capture.read(src)) {
 		char c = cv::waitKey(50);
@@ -37,7 +38,7 @@ int OpencvDemo078() {
 		dst.copyTo(result(cv::Range(0, h), cv::Range(w, w * 2)));
 		cv::putText(result, "original frame", cv::Point(10, 30), cv::FONT_ITALIC, 1.0, cv::Scalar(0, 0, 255), 1);
 		cv::putText(result, "processed frame", cv::Point(w + 10, 30), cv::FONT_ITALIC, 1.0, cv::Scalar(0, 0, 255), 1);
-		cv::imshow("video processing", result);
+		cv::imshow(winName, result);
 
 		if (c == 27) { // ESC
 			break;

@@ -25,7 +25,8 @@ int OpencvDemo077() {
                                                 width, height, fps, num_of_frames));
 
 	cv::Mat src, dst, result;
-	cv::namedWindow("video processing", cv::WINDOW_AUTOSIZE);
+	std::string winName = "video processing";
+	cv::namedWindow(winName, cv::WINDOW_AUTOSIZE);
     int index = 0;
 
 	while (capture.read(src)) {
@@ -48,7 +49,7 @@ int OpencvDemo077() {
 		dst.copyTo(result(cv::Range(0, h), cv::Range(w, w * 2)));
 		cv::putText(result, "original frame", cv::Point(10, 20), cv::FONT_ITALIC, 0.6, cv::Scalar(0, 0, 255), 1);
 		cv::putText(result, "processed frame", cv::Point(w + 10, 20), cv::FONT_ITALIC, 0.6, cv::Scalar(0, 0, 255), 1);
-		cv::imshow("video processing", result);
+		cv::imshow(winName, result);
 
 		if (c == 27) { // ESC
 			break;

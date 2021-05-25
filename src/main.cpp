@@ -79,7 +79,7 @@ int OpencvDemo075();
 int OpencvDemo076();
 int OpencvDemo077();
 int OpencvDemo078();
-// int OpencvDemo079();
+int OpencvDemo079();
 // int OpencvDemo080();
 
 int main(int argc, char** argv) {
@@ -484,10 +484,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo078();
 		break;
 
-	// case 79:
-	// 	// 
-	// 	ret = OpencvDemo079();
-	// 	break;
+	case 79:
+		// 视频分析—背景/前景提取
+		ret = OpencvDemo079();
+		break;
 
 	// case 80:
 	// 	// 
