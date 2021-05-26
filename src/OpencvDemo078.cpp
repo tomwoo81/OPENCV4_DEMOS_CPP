@@ -57,11 +57,11 @@ static void process_frame(const cv::Mat& src, cv::Mat& dst) {
 	cv::Mat hsv, mask;
 	cv::cvtColor(src, hsv, cv::COLOR_BGR2HSV);
 
-	// 定义结构元素
-	cv::Mat se = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(15, 15), cv::Point(-1, -1));
-
 	// 颜色提取 - 红色
 	cv::inRange(hsv, cv::Scalar(0, 43, 46), cv::Scalar(10, 255, 255), mask);
+
+	// 定义结构元素
+	cv::Mat se = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(15, 15), cv::Point(-1, -1));
 
 	// 开操作
 	cv::morphologyEx(mask, mask, cv::MORPH_OPEN, se);

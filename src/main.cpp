@@ -80,7 +80,7 @@ int OpencvDemo076();
 int OpencvDemo077();
 int OpencvDemo078();
 int OpencvDemo079();
-// int OpencvDemo080();
+int OpencvDemo080();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -489,10 +489,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo079();
 		break;
 
-	// case 80:
-	// 	// 
-	// 	ret = OpencvDemo080();
-	// 	break;
+	case 80:
+		// 视频分析—背景消除与前景ROI提取
+		ret = OpencvDemo080();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
