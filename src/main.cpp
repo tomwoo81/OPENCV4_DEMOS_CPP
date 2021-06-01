@@ -81,6 +81,16 @@ int OpencvDemo077();
 int OpencvDemo078();
 int OpencvDemo079();
 int OpencvDemo080();
+int OpencvDemo081();
+// int OpencvDemo082();
+// int OpencvDemo083();
+// int OpencvDemo084();
+// int OpencvDemo085();
+// int OpencvDemo086();
+// int OpencvDemo087();
+// int OpencvDemo088();
+// int OpencvDemo089();
+// int OpencvDemo090();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -493,6 +503,56 @@ int main(int argc, char** argv) {
 		// 视频分析—背景消除与前景ROI提取
 		ret = OpencvDemo080();
 		break;
+
+	case 81:
+		// 角点检测—Harris角点检测
+		ret = OpencvDemo081();
+		break;
+
+	// case 82:
+	// 	// 
+	// 	ret = OpencvDemo082();
+	// 	break;
+
+	// case 83:
+	// 	// 
+	// 	ret = OpencvDemo083();
+	// 	break;
+
+	// case 84:
+	// 	// 
+	// 	ret = OpencvDemo084();
+	// 	break;
+
+	// case 85:
+	// 	// 
+	// 	ret = OpencvDemo085();
+	// 	break;
+
+	// case 86:
+	// 	// 
+	// 	ret = OpencvDemo086();
+	// 	break;
+
+	// case 87:
+	// 	// 
+	// 	ret = OpencvDemo087();
+	// 	break;
+
+	// case 88:
+	// 	// 
+	// 	ret = OpencvDemo088();
+	// 	break;
+
+	// case 89:
+	// 	// 
+	// 	ret = OpencvDemo089();
+	// 	break;
+
+	// case 90:
+	// 	// 
+	// 	ret = OpencvDemo090();
+	// 	break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
