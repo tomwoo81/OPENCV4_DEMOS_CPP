@@ -82,7 +82,7 @@ int OpencvDemo078();
 int OpencvDemo079();
 int OpencvDemo080();
 int OpencvDemo081();
-// int OpencvDemo082();
+int OpencvDemo082();
 // int OpencvDemo083();
 // int OpencvDemo084();
 // int OpencvDemo085();
@@ -509,10 +509,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo081();
 		break;
 
-	// case 82:
-	// 	// 
-	// 	ret = OpencvDemo082();
-	// 	break;
+	case 82:
+		// 角点检测—Shi-Tomasi角点检测
+		ret = OpencvDemo082();
+		break;
 
 	// case 83:
 	// 	// 
