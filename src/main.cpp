@@ -83,7 +83,7 @@ int OpencvDemo079();
 int OpencvDemo080();
 int OpencvDemo081();
 int OpencvDemo082();
-// int OpencvDemo083();
+int OpencvDemo083();
 // int OpencvDemo084();
 // int OpencvDemo085();
 // int OpencvDemo086();
@@ -514,10 +514,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo082();
 		break;
 
-	// case 83:
-	// 	// 
-	// 	ret = OpencvDemo083();
-	// 	break;
+	case 83:
+		// 角点检测–亚像素级别角点检测
+		ret = OpencvDemo083();
+		break;
 
 	// case 84:
 	// 	// 
