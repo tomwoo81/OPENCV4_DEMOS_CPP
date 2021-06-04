@@ -84,7 +84,7 @@ int OpencvDemo080();
 int OpencvDemo081();
 int OpencvDemo082();
 int OpencvDemo083();
-// int OpencvDemo084();
+int OpencvDemo084();
 // int OpencvDemo085();
 // int OpencvDemo086();
 // int OpencvDemo087();
@@ -519,10 +519,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo083();
 		break;
 
-	// case 84:
-	// 	// 
-	// 	ret = OpencvDemo084();
-	// 	break;
+	case 84:
+		// 视频分析—移动对象的KLT光流跟踪算法
+		ret = OpencvDemo084();
+		break;
 
 	// case 85:
 	// 	// 
