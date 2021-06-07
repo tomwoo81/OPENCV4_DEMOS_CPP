@@ -51,7 +51,6 @@ int OpencvDemo078() {
 }
 
 static void process_frame(const cv::Mat& src, cv::Mat& dst) {
-	dst.release();
 	dst = src.clone();
 
 	cv::Mat hsv, mask;

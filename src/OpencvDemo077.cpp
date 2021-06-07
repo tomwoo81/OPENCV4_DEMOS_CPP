@@ -62,8 +62,6 @@ int OpencvDemo077() {
 }
 
 static void process_frame(const cv::Mat& src, cv::Mat& dst, int opt) {
-	dst.release();
-
 	if (opt == 0) {
 		cv::bitwise_not(src, dst);
 	}

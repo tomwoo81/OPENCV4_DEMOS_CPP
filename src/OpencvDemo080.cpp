@@ -52,7 +52,6 @@ int OpencvDemo080() {
 }
 
 static void process_frame(const cv::Ptr<cv::BackgroundSubtractor>& pBgSub, const cv::Mat& src, cv::Mat& dst) {
-	dst.release();
 	dst = src.clone();
 
     // 提取前景，生成mask

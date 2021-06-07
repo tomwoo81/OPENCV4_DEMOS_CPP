@@ -85,8 +85,8 @@ int OpencvDemo081();
 int OpencvDemo082();
 int OpencvDemo083();
 int OpencvDemo084();
-// int OpencvDemo085();
-// int OpencvDemo086();
+int OpencvDemo085();
+int OpencvDemo086();
 // int OpencvDemo087();
 // int OpencvDemo088();
 // int OpencvDemo089();
@@ -520,19 +520,19 @@ int main(int argc, char** argv) {
 		break;
 
 	case 84:
-		// 视频分析—移动对象的KLT光流跟踪算法
+		// 视频分析—移动对象的KLT光流跟踪算法之一
 		ret = OpencvDemo084();
 		break;
 
-	// case 85:
-	// 	// 
-	// 	ret = OpencvDemo085();
-	// 	break;
+	case 85:
+		// 视频分析-移动对象的KLT光流跟踪算法之二
+		ret = OpencvDemo085();
+		break;
 
-	// case 86:
-	// 	// 
-	// 	ret = OpencvDemo086();
-	// 	break;
+	case 86:
+		// 视频分析–稠密光流分析
+		ret = OpencvDemo086();
+		break;
 
 	// case 87:
 	// 	// 

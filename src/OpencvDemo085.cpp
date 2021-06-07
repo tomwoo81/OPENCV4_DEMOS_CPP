@@ -1,8 +1,8 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-// 视频分析—移动对象的KLT光流跟踪算法之一
-int OpencvDemo084() {
+// 视频分析-移动对象的KLT光流跟踪算法之二
+int OpencvDemo085() {
 	cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_DEBUG);
 
 	cv::VideoCapture capture("videos/color_object.mp4");
@@ -19,7 +19,7 @@ int OpencvDemo084() {
     }
 
 	// detector parameters
-	int maxCorners = 100;
+	int maxCorners = 5000;
 	double qualityLevel = 0.01;
 	double minDistance = 10;
 	int blockSize = 3;
@@ -27,8 +27,10 @@ int OpencvDemo084() {
     // detecting feature points
     cv::Mat old_gray, gray;
 	cv::cvtColor(src, old_gray, cv::COLOR_BGR2GRAY);
-	std::vector<cv::Point2f> old_pts, pts;
+	std::vector<cv::Point2f> old_pts, pts, init_pts;
 	cv::goodFeaturesToTrack(old_gray, old_pts, maxCorners, qualityLevel, minDistance, cv::Mat(), blockSize, false);
+    init_pts = old_pts;
+    CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("number of feature points: %zu", init_pts.size()));
 
 	cv::Mat dst, result;
 	std::string winName = "Lucas-Kanade optical flow tracking";
@@ -57,28 +59,47 @@ int OpencvDemo084() {
 			cv::calcOpticalFlowPyrLK(old_gray, gray, old_pts, pts, status, err, winSize, maxLevel, criteria, flags);
 		}
 
-		for (size_t i = 0; i < pts.size(); i++)
+        uint k;
+
+		for (size_t i = k = 0; i < pts.size(); i++)
 		{
-			// judging the status
-			if (status[i]) {
-				// drawing circles around feature points and lines on their optical flows
+			// judging the status and the distance
+            float dist = cv::abs(pts[i].x - old_pts[i].x) + cv::abs(pts[i].y - old_pts[i].y);
+			if (status[i] && dist > 2) {
+                old_pts[k] = old_pts[i];
+                pts[k] = pts[i];
+                init_pts[k] = init_pts[i];
+                k++;
+
+                // drawing circles around feature points and lines on their optical flows
 				int b = rng.uniform(0, 256);
 				int g = rng.uniform(0, 256);
 				int r = rng.uniform(0, 256);
 				cv::circle(dst, pts[i], 3, cv::Scalar(b, g, r), cv::FILLED);
-				cv::line(dst, old_pts[i], pts[i], cv::Scalar(b, g, r), 2);
+				cv::line(dst, init_pts[i], pts[i], cv::Scalar(b, g, r), 2);
 			}
 		}
 
-		// detecting feature points
-		cv::goodFeaturesToTrack(gray, old_pts, maxCorners, qualityLevel, minDistance, cv::Mat(), blockSize, false);
+        // reserving the valid feature points
+        old_pts.resize(k);
+        pts.resize(k);
+        init_pts.resize(k);
 
-		pts.clear();
-
-		// updating old gray image
+		// updating old gray image and old feature points
 		gray.copyTo(old_gray);
+        old_pts = pts;
+        pts.clear();
 
-		int h = src.rows;
+		if (init_pts.size() < 40) {
+            // re-detecting feature points
+            std::vector<cv::Point2f> feature_pts;
+            cv::goodFeaturesToTrack(gray, feature_pts, maxCorners, qualityLevel, minDistance, cv::Mat(), blockSize, false);
+            old_pts.insert(old_pts.end(), feature_pts.begin(), feature_pts.end());
+            init_pts.insert(init_pts.end(), feature_pts.begin(), feature_pts.end());
+            CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("number of feature points: %zu", init_pts.size()));
+		}
+
+        int h = src.rows;
 		int w = src.cols;
 		if (result.empty()) {
 			result = cv::Mat::zeros(cv::Size(w * 2, h), src.type());
