@@ -87,7 +87,7 @@ int OpencvDemo083();
 int OpencvDemo084();
 int OpencvDemo085();
 int OpencvDemo086();
-// int OpencvDemo087();
+int OpencvDemo087();
 // int OpencvDemo088();
 // int OpencvDemo089();
 // int OpencvDemo090();
@@ -534,10 +534,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo086();
 		break;
 
-	// case 87:
-	// 	// 
-	// 	ret = OpencvDemo087();
-	// 	break;
+	case 87:
+		// 视频分析—基于帧差法实现移动对象分析
+		ret = OpencvDemo087();
+		break;
 
 	// case 88:
 	// 	// 
