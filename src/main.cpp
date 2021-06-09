@@ -88,7 +88,7 @@ int OpencvDemo084();
 int OpencvDemo085();
 int OpencvDemo086();
 int OpencvDemo087();
-// int OpencvDemo088();
+int OpencvDemo088();
 // int OpencvDemo089();
 // int OpencvDemo090();
 
@@ -539,10 +539,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo087();
 		break;
 
-	// case 88:
-	// 	// 
-	// 	ret = OpencvDemo088();
-	// 	break;
+	case 88:
+		// 视频分析—基于均值迁移的对象移动分析
+		ret = OpencvDemo088();
+		break;
 
 	// case 89:
 	// 	// 
