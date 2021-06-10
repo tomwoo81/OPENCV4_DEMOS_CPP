@@ -89,7 +89,7 @@ int OpencvDemo085();
 int OpencvDemo086();
 int OpencvDemo087();
 int OpencvDemo088();
-// int OpencvDemo089();
+int OpencvDemo089();
 // int OpencvDemo090();
 
 int main(int argc, char** argv) {
@@ -544,10 +544,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo088();
 		break;
 
-	// case 89:
-	// 	// 
-	// 	ret = OpencvDemo089();
-	// 	break;
+	case 89:
+		// 视频分析—基于连续自适应均值迁移的对象移动分析
+		ret = OpencvDemo089();
+		break;
 
 	// case 90:
 	// 	// 
