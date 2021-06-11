@@ -90,7 +90,7 @@ int OpencvDemo086();
 int OpencvDemo087();
 int OpencvDemo088();
 int OpencvDemo089();
-// int OpencvDemo090();
+int OpencvDemo090();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -549,10 +549,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo089();
 		break;
 
-	// case 90:
-	// 	// 
-	// 	ret = OpencvDemo090();
-	// 	break;
+	case 90:
+		// 视频分析—对象移动轨迹绘制
+		ret = OpencvDemo090();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
