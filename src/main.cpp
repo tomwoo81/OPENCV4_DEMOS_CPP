@@ -91,6 +91,16 @@ int OpencvDemo087();
 int OpencvDemo088();
 int OpencvDemo089();
 int OpencvDemo090();
+int OpencvDemo091();
+// int OpencvDemo092();
+// int OpencvDemo093();
+// int OpencvDemo094();
+// int OpencvDemo095();
+// int OpencvDemo096();
+// int OpencvDemo097();
+// int OpencvDemo098();
+// int OpencvDemo099();
+// int OpencvDemo100();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -553,6 +563,56 @@ int main(int argc, char** argv) {
 		// 视频分析—对象移动轨迹绘制
 		ret = OpencvDemo090();
 		break;
+
+	case 91:
+		// 对象检测—HAAR级联检测器使用
+		ret = OpencvDemo091();
+		break;
+
+	// case 92:
+	// 	// 
+	// 	ret = OpencvDemo092();
+	// 	break;
+
+	// case 93:
+	// 	// 
+	// 	ret = OpencvDemo093();
+	// 	break;
+
+	// case 94:
+	// 	// 
+	// 	ret = OpencvDemo094();
+	// 	break;
+
+	// case 95:
+	// 	// 
+	// 	ret = OpencvDemo095();
+	// 	break;
+
+	// case 96:
+	// 	// 
+	// 	ret = OpencvDemo096();
+	// 	break;
+
+	// case 97:
+	// 	// 
+	// 	ret = OpencvDemo097();
+	// 	break;
+
+	// case 98:
+	// 	// 
+	// 	ret = OpencvDemo098();
+	// 	break;
+
+	// case 99:
+	// 	// 
+	// 	ret = OpencvDemo099();
+	// 	break;
+
+	// case 100:
+	// 	// 
+	// 	ret = OpencvDemo100();
+	// 	break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
