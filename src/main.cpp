@@ -92,8 +92,8 @@ int OpencvDemo088();
 int OpencvDemo089();
 int OpencvDemo090();
 int OpencvDemo091();
-// int OpencvDemo092();
-// int OpencvDemo093();
+int OpencvDemo092();
+int OpencvDemo093();
 // int OpencvDemo094();
 // int OpencvDemo095();
 // int OpencvDemo096();
@@ -569,15 +569,15 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo091();
 		break;
 
-	// case 92:
-	// 	// 
-	// 	ret = OpencvDemo092();
-	// 	break;
+	case 92:
+		// 对象检测—HAAR特征介绍
+		ret = OpencvDemo092();
+		break;
 
-	// case 93:
-	// 	// 
-	// 	ret = OpencvDemo093();
-	// 	break;
+	case 93:
+		// 对象检测—LBP特征介绍
+		ret = OpencvDemo093();
+		break;
 
 	// case 94:
 	// 	// 
