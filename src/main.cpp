@@ -94,7 +94,7 @@ int OpencvDemo090();
 int OpencvDemo091();
 int OpencvDemo092();
 int OpencvDemo093();
-// int OpencvDemo094();
+int OpencvDemo094();
 // int OpencvDemo095();
 // int OpencvDemo096();
 // int OpencvDemo097();
@@ -579,10 +579,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo093();
 		break;
 
-	// case 94:
-	// 	// 
-	// 	ret = OpencvDemo094();
-	// 	break;
+	case 94:
+		// ORB FAST特征关键点检测
+		ret = OpencvDemo094();
+		break;
 
 	// case 95:
 	// 	// 
