@@ -25,9 +25,9 @@ int OpencvDemo094() {
 	cv::Mat result = cv::Mat::zeros(cv::Size(w * 2, h), src.type());
 	src.copyTo(result(cv::Range(0, h), cv::Range(0, w)));
 	dst.copyTo(result(cv::Range(0, h), cv::Range(w, w * 2)));
-	cv::putText(result, "original image", cv::Point(10, 30), cv::FONT_ITALIC, 0.8, cv::Scalar(0, 0, 255), 1);
-	cv::putText(result, "image with results of ORB detection", cv::Point(w + 10, 30), cv::FONT_ITALIC, 0.8, cv::Scalar(0, 0, 255), 1);
-	cv::imshow("ORB keypoint detection and descriptor extraction", result);
+	cv::putText(result, "original image", cv::Point(10, 30), cv::FONT_ITALIC, 0.6, cv::Scalar(0, 0, 255), 1);
+	cv::putText(result, "image with results of ORB keypoint detection", cv::Point(w + 10, 30), cv::FONT_ITALIC, 0.6, cv::Scalar(0, 0, 255), 1);
+	cv::imshow("ORB keypoint detection", result);
 
     cv::waitKey(0);
 

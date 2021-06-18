@@ -95,7 +95,7 @@ int OpencvDemo091();
 int OpencvDemo092();
 int OpencvDemo093();
 int OpencvDemo094();
-// int OpencvDemo095();
+int OpencvDemo095();
 // int OpencvDemo096();
 // int OpencvDemo097();
 // int OpencvDemo098();
@@ -584,10 +584,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo094();
 		break;
 
-	// case 95:
-	// 	// 
-	// 	ret = OpencvDemo095();
-	// 	break;
+	case 95:
+		// BRIEF特征描述子匹配
+		ret = OpencvDemo095();
+		break;
 
 	// case 96:
 	// 	// 
