@@ -97,7 +97,7 @@ int OpencvDemo093();
 int OpencvDemo094();
 int OpencvDemo095();
 int OpencvDemo096();
-// int OpencvDemo097();
+int OpencvDemo097();
 // int OpencvDemo098();
 // int OpencvDemo099();
 // int OpencvDemo100();
@@ -594,10 +594,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo096();
 		break;
 
-	// case 97:
-	// 	// 
-	// 	ret = OpencvDemo097();
-	// 	break;
+	case 97:
+		// 基于描述子匹配的已知对象定位
+		ret = OpencvDemo097();
+		break;
 
 	// case 98:
 	// 	// 
