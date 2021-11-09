@@ -96,7 +96,7 @@ int OpencvDemo092();
 int OpencvDemo093();
 int OpencvDemo094();
 int OpencvDemo095();
-// int OpencvDemo096();
+int OpencvDemo096();
 // int OpencvDemo097();
 // int OpencvDemo098();
 // int OpencvDemo099();
@@ -589,10 +589,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo095();
 		break;
 
-	// case 96:
-	// 	// 
-	// 	ret = OpencvDemo096();
-	// 	break;
+	case 96:
+		// 描述子匹配
+		ret = OpencvDemo096();
+		break;
 
 	// case 97:
 	// 	// 
