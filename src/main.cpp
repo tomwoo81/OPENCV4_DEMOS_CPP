@@ -99,7 +99,7 @@ int OpencvDemo095();
 int OpencvDemo096();
 int OpencvDemo097();
 int OpencvDemo098();
-// int OpencvDemo099();
+int OpencvDemo099();
 // int OpencvDemo100();
 
 int main(int argc, char** argv) {
@@ -604,10 +604,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo098();
 		break;
 
-	// case 99:
-	// 	// 
-	// 	ret = OpencvDemo099();
-	// 	break;
+	case 99:
+		// SIFT特征提取—描述子生成
+		ret = OpencvDemo099();
+		break;
 
 	// case 100:
 	// 	// 
