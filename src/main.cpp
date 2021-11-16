@@ -100,7 +100,7 @@ int OpencvDemo096();
 int OpencvDemo097();
 int OpencvDemo098();
 int OpencvDemo099();
-// int OpencvDemo100();
+int OpencvDemo100();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -609,10 +609,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo099();
 		break;
 
-	// case 100:
-	// 	// 
-	// 	ret = OpencvDemo100();
-	// 	break;
+	case 100:
+		// HOG特征与行人检测
+		ret = OpencvDemo100();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
