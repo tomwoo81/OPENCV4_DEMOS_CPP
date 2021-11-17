@@ -101,6 +101,16 @@ int OpencvDemo097();
 int OpencvDemo098();
 int OpencvDemo099();
 int OpencvDemo100();
+int OpencvDemo101();
+// int OpencvDemo102();
+// int OpencvDemo103();
+// int OpencvDemo104();
+// int OpencvDemo105();
+// int OpencvDemo106();
+// int OpencvDemo107();
+// int OpencvDemo108();
+// int OpencvDemo109();
+// int OpencvDemo110();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -613,6 +623,56 @@ int main(int argc, char** argv) {
 		// HOG特征与行人检测
 		ret = OpencvDemo100();
 		break;
+
+	case 101:
+		// HOG特征描述子—多尺度检测
+		ret = OpencvDemo101();
+		break;
+
+	// case 102:
+	// 	// 
+	// 	ret = OpencvDemo102();
+	// 	break;
+
+	// case 103:
+	// 	// 
+	// 	ret = OpencvDemo103();
+	// 	break;
+
+	// case 104:
+	// 	// 
+	// 	ret = OpencvDemo104();
+	// 	break;
+
+	// case 105:
+	// 	// 
+	// 	ret = OpencvDemo105();
+	// 	break;
+
+	// case 106:
+	// 	// 
+	// 	ret = OpencvDemo106();
+	// 	break;
+
+	// case 107:
+	// 	// 
+	// 	ret = OpencvDemo107();
+	// 	break;
+
+	// case 108:
+	// 	// 
+	// 	ret = OpencvDemo108();
+	// 	break;
+
+	// case 109:
+	// 	// 
+	// 	ret = OpencvDemo109();
+	// 	break;
+
+	// case 110:
+	// 	// 
+	// 	ret = OpencvDemo110();
+	// 	break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
