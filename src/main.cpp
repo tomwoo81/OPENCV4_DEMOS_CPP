@@ -102,7 +102,7 @@ int OpencvDemo098();
 int OpencvDemo099();
 int OpencvDemo100();
 int OpencvDemo101();
-// int OpencvDemo102();
+int OpencvDemo102();
 // int OpencvDemo103();
 // int OpencvDemo104();
 // int OpencvDemo105();
@@ -629,10 +629,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo101();
 		break;
 
-	// case 102:
-	// 	// 
-	// 	ret = OpencvDemo102();
-	// 	break;
+	case 102:
+		// HOG特征描述子—提取描述子
+		ret = OpencvDemo102();
+		break;
 
 	// case 103:
 	// 	// 
