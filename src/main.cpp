@@ -103,7 +103,7 @@ int OpencvDemo099();
 int OpencvDemo100();
 int OpencvDemo101();
 int OpencvDemo102();
-// int OpencvDemo103();
+int OpencvDemo103();
 // int OpencvDemo104();
 // int OpencvDemo105();
 // int OpencvDemo106();
@@ -634,10 +634,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo102();
 		break;
 
-	// case 103:
-	// 	// 
-	// 	ret = OpencvDemo103();
-	// 	break;
+	case 103:
+		// HOG特征描述子—使用描述子特征生成样本数据
+		ret = OpencvDemo103();
+		break;
 
 	// case 104:
 	// 	// 
