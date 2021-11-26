@@ -3,17 +3,25 @@
 
 static std::string positive_dir = "images/train_data/elec_watch/positive/";
 static std::string negative_dir = "images/train_data/elec_watch/negative/";
+static std::string test_filename = "images/train_data/elec_watch/test/test_01.png";
+static std::string model_filename = "models/svm_elec_watch.yml";
 
 static void get_hog_descripor(const cv::Mat& image, std::vector<float>& desc);
 static void generate_dataset(cv::Mat& trainData, cv::Mat& labels);
+static void svm_train(const cv::Mat& trainData, const cv::Mat& labels);
+static void svm_predict();
 
-// HOG特征描述子—使用描述子特征生成样本数据
-int OpencvDemo103() {
+// SVM线性分类器
+int OpencvDemo104() {
     cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_DEBUG);
 
 	cv::Mat trainData, labels;
 
 	generate_dataset(trainData, labels);
+
+    svm_train(trainData, labels);
+
+	svm_predict();
 
 	return cv::Error::StsOk;
 }
@@ -56,12 +64,9 @@ static void generate_dataset(cv::Mat& trainData, cv::Mat& labels) {
 	CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("number of images as positive samples: %zu", num_positive_images));
 	for (size_t i = 0; i < num_positive_images; i++) {
 		cv::Mat image = cv::imread(positive_image_filenames[i]);
-		cv::imshow("image as positive sample", image);
-		cv::waitKey(0);
 
 		std::vector<float> fv;
 		get_hog_descripor(image, fv);
-		CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("image path: %s, feature data length: %zu", positive_image_filenames[i].c_str(), fv.size()));
 
 		for (size_t j = 0; j < fv.size(); j++) {
 			trainData.at<float>(i, j) = fv[j];
@@ -72,18 +77,50 @@ static void generate_dataset(cv::Mat& trainData, cv::Mat& labels) {
 	CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("number of images as negative samples: %zu", num_negative_images));
 	for (size_t i = 0; i < num_negative_images; i++) {
 		cv::Mat image = cv::imread(negative_image_filenames[i]);
-		cv::imshow("image as negative sample", image);
-		cv::waitKey(0);
 
 		std::vector<float> fv;
 		get_hog_descripor(image, fv);
-		CV_LOG_INFO(CV_LOGTAG_GLOBAL, cv::format("image path: %s, feature data length: %zu", negative_image_filenames[i].c_str(), fv.size()));
 
 		for (size_t j = 0; j < fv.size(); j++) {
 			trainData.at<float>(num_positive_images + i, j) = fv[j];
 		}
 		labels.at<int>(num_positive_images + i, 0) = -1;
 	}
+}
+
+static void svm_train(const cv::Mat& trainData, const cv::Mat& labels) {
+    cv::Ptr<cv::ml::SVM> pSVM = cv::ml::SVM::create();
+
+	// Default values to train SVM
+    pSVM->setKernel(cv::ml::SVM::LINEAR);
+    pSVM->setType(cv::ml::SVM::C_SVC);
+    pSVM->setC(2.67);
+    pSVM->setGamma(5.383);
+
+    CV_LOG_INFO(CV_LOGTAG_GLOBAL, "SVM training starts...");
+	pSVM->train(trainData, cv::ml::ROW_SAMPLE, labels);
+    CV_LOG_INFO(CV_LOGTAG_GLOBAL, "SVM training done.");
+
+	// Save SVM model
+    pSVM->save(model_filename);
+}
+
+static void svm_predict() {
+	cv::Ptr<cv::ml::SVM> pSVM = cv::ml::SVM::load(model_filename);
+
+	cv::Mat src = cv::imread(test_filename);
+
+	std::vector<float> fv;
+	get_hog_descripor(src, fv);
+
+	float result = pSVM->predict(fv);
+
+	cv::Mat dst = src.clone();
+
+	cv::putText(dst, cv::format("prediction result: %.3f", result), cv::Point(10, 30), cv::FONT_ITALIC, 0.6, cv::Scalar(0, 0, 255), 1);
+	cv::imshow("SVM prediction", dst);
+
+	cv::waitKey(0);
 }
 
 /* end of file */

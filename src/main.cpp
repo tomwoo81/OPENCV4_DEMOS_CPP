@@ -104,7 +104,7 @@ int OpencvDemo100();
 int OpencvDemo101();
 int OpencvDemo102();
 int OpencvDemo103();
-// int OpencvDemo104();
+int OpencvDemo104();
 // int OpencvDemo105();
 // int OpencvDemo106();
 // int OpencvDemo107();
@@ -639,10 +639,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo103();
 		break;
 
-	// case 104:
-	// 	// 
-	// 	ret = OpencvDemo104();
-	// 	break;
+	case 104:
+		// SVM线性分类器
+		ret = OpencvDemo104();
+		break;
 
 	// case 105:
 	// 	// 
