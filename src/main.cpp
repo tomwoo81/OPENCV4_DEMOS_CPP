@@ -106,7 +106,7 @@ int OpencvDemo102();
 int OpencvDemo103();
 int OpencvDemo104();
 int OpencvDemo105();
-// int OpencvDemo106();
+int OpencvDemo106();
 // int OpencvDemo107();
 // int OpencvDemo108();
 // int OpencvDemo109();
@@ -649,10 +649,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo105();
 		break;
 
-	// case 106:
-	// 	// 
-	// 	ret = OpencvDemo106();
-	// 	break;
+	case 106:
+		// AKAZE特征与描述子
+		ret = OpencvDemo106();
+		break;
 
 	// case 107:
 	// 	// 
