@@ -107,7 +107,7 @@ int OpencvDemo103();
 int OpencvDemo104();
 int OpencvDemo105();
 int OpencvDemo106();
-// int OpencvDemo107();
+int OpencvDemo107();
 // int OpencvDemo108();
 // int OpencvDemo109();
 // int OpencvDemo110();
@@ -654,10 +654,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo106();
 		break;
 
-	// case 107:
-	// 	// 
-	// 	ret = OpencvDemo107();
-	// 	break;
+	case 107:
+		// BRISK特征提取与描述子匹配
+		ret = OpencvDemo107();
+		break;
 
 	// case 108:
 	// 	// 
