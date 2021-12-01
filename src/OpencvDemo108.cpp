@@ -12,10 +12,10 @@ int OpencvDemo108() {
 	}
 
     // 通过GFTTDetector检测关键点
-    auto gfft = cv::GFTTDetector::create(1000, 0.01, 1.0, 3, false, 0.04);
+    auto gftt = cv::GFTTDetector::create(1000, 0.01, 1.0, 3, false, 0.04);
 
 	std::vector<cv::KeyPoint> kps;
-	gfft->detect(src, kps);
+	gftt->detect(src, kps);
 
     cv::Mat dst;
 
