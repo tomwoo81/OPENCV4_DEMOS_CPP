@@ -108,7 +108,7 @@ int OpencvDemo104();
 int OpencvDemo105();
 int OpencvDemo106();
 int OpencvDemo107();
-// int OpencvDemo108();
+int OpencvDemo108();
 // int OpencvDemo109();
 // int OpencvDemo110();
 
@@ -659,10 +659,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo107();
 		break;
 
-	// case 108:
-	// 	// 
-	// 	ret = OpencvDemo108();
-	// 	break;
+	case 108:
+		// 特征提取之关键点检测—GFTTDetector
+		ret = OpencvDemo108();
+		break;
 
 	// case 109:
 	// 	// 
