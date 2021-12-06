@@ -109,7 +109,7 @@ int OpencvDemo105();
 int OpencvDemo106();
 int OpencvDemo107();
 int OpencvDemo108();
-// int OpencvDemo109();
+int OpencvDemo109();
 // int OpencvDemo110();
 
 int main(int argc, char** argv) {
@@ -664,10 +664,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo108();
 		break;
 
-	// case 109:
-	// 	// 
-	// 	ret = OpencvDemo109();
-	// 	break;
+	case 109:
+		// BLOB特征分析—SimpleBlobDetector使用
+		ret = OpencvDemo109();
+		break;
 
 	// case 110:
 	// 	// 
