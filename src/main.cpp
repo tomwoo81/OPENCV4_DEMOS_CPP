@@ -110,7 +110,7 @@ int OpencvDemo106();
 int OpencvDemo107();
 int OpencvDemo108();
 int OpencvDemo109();
-// int OpencvDemo110();
+int OpencvDemo110();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -669,10 +669,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo109();
 		break;
 
-	// case 110:
-	// 	// 
-	// 	ret = OpencvDemo110();
-	// 	break;
+	case 110:
+		// KMeans数据分类
+		ret = OpencvDemo110();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
