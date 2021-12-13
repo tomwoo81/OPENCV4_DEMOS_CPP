@@ -111,6 +111,16 @@ int OpencvDemo107();
 int OpencvDemo108();
 int OpencvDemo109();
 int OpencvDemo110();
+int OpencvDemo111();
+// int OpencvDemo112();
+// int OpencvDemo113();
+// int OpencvDemo114();
+// int OpencvDemo115();
+// int OpencvDemo116();
+// int OpencvDemo117();
+// int OpencvDemo118();
+// int OpencvDemo119();
+// int OpencvDemo120();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -673,6 +683,56 @@ int main(int argc, char** argv) {
 		// KMeans数据分类
 		ret = OpencvDemo110();
 		break;
+
+	case 111:
+		// KMeans图像分割
+		ret = OpencvDemo111();
+		break;
+
+	// case 112:
+	// 	// 
+	// 	ret = OpencvDemo112();
+	// 	break;
+
+	// case 113:
+	// 	// 
+	// 	ret = OpencvDemo113();
+	// 	break;
+
+	// case 114:
+	// 	// 
+	// 	ret = OpencvDemo114();
+	// 	break;
+
+	// case 115:
+	// 	// 
+	// 	ret = OpencvDemo115();
+	// 	break;
+
+	// case 116:
+	// 	// 
+	// 	ret = OpencvDemo116();
+	// 	break;
+
+	// case 117:
+	// 	// 
+	// 	ret = OpencvDemo117();
+	// 	break;
+
+	// case 118:
+	// 	// 
+	// 	ret = OpencvDemo118();
+	// 	break;
+
+	// case 119:
+	// 	// 
+	// 	ret = OpencvDemo119();
+	// 	break;
+
+	// case 120:
+	// 	// 
+	// 	ret = OpencvDemo120();
+	// 	break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
