@@ -55,8 +55,8 @@ int OpencvDemo111() {
 	src.copyTo(result(cv::Range(0, h), cv::Range(0, w)));
 	dst.copyTo(result(cv::Range(0, h), cv::Range(w, w * 2)));
 	cv::putText(result, "original image", cv::Point(10, 30), cv::FONT_ITALIC, 0.5, cv::Scalar(0, 255, 0), 1);
-	cv::putText(result, "image with results of K-means clustering", cv::Point(w + 10, 30), cv::FONT_ITALIC, 0.5, cv::Scalar(0, 255, 0), 1);
-	cv::imshow("K-means clustering", result);
+	cv::putText(result, "segmented image after K-means clustering", cv::Point(w + 10, 30), cv::FONT_ITALIC, 0.5, cv::Scalar(0, 255, 0), 1);
+	cv::imshow("K-means clustering - image segmentation", result);
 
     cv::waitKey(0);
 
