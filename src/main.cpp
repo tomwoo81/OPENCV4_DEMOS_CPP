@@ -121,6 +121,26 @@ int OpencvDemo117();
 int OpencvDemo118();
 int OpencvDemo119();
 int OpencvDemo120();
+int OpencvDemo121();
+// int OpencvDemo122();
+// int OpencvDemo123();
+// int OpencvDemo124();
+// int OpencvDemo125();
+// int OpencvDemo126();
+// int OpencvDemo127();
+// int OpencvDemo128();
+// int OpencvDemo129();
+// int OpencvDemo130();
+// int OpencvDemo131();
+// int OpencvDemo132();
+// int OpencvDemo133();
+// int OpencvDemo134();
+// int OpencvDemo135();
+// int OpencvDemo136();
+// int OpencvDemo137();
+// int OpencvDemo138();
+// int OpencvDemo139();
+// int OpencvDemo140();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -733,6 +753,106 @@ int main(int argc, char** argv) {
 		// 二维码检测与识别
 		ret = OpencvDemo120();
 		break;
+
+	case 121:
+		// OpenCV DNN 获取导入模型各层信息
+		ret = OpencvDemo121();
+		break;
+
+	// case 122:
+	// 	// OpenCV DNN 实现图像分类
+	// 	ret = OpencvDemo122();
+	// 	break;
+
+	// case 123:
+	// 	// OpenCV DNN 为模型运行设置目标设备与计算后台
+	// 	ret = OpencvDemo123();
+	// 	break;
+
+	// case 124:
+	// 	// OpenCV DNN 基于SSD实现对象检测
+	// 	ret = OpencvDemo124();
+	// 	break;
+
+	// case 125:
+	// 	// OpenCV DNN 基于SSD实现实时视频检测
+	// 	ret = OpencvDemo125();
+	// 	break;
+
+	// case 126:
+	// 	// OpenCV DNN 基于残差网络的人脸检测
+	// 	ret = OpencvDemo126();
+	// 	break;
+
+	// case 127:
+	// 	// OpenCV DNN 基于残差网络的视频人脸检测
+	// 	ret = OpencvDemo127();
+	// 	break;
+
+	// case 128:
+	// 	// OpenCV DNN 直接调用TensorFlow的导出模型
+	// 	ret = OpencvDemo128();
+	// 	break;
+
+	// case 129:
+	// 	// OpenCV DNN 调用OpenPose模型实现姿态评估
+	// 	ret = OpencvDemo129();
+	// 	break;
+
+	// case 130:
+	// 	// OpenCV DNN 支持YOLO对象检测网络运行
+	// 	ret = OpencvDemo130();
+	// 	break;
+
+	// case 131:
+	// 	// OpenCV DNN 支持YOLOv3-tiny版本实时对象检测
+	// 	ret = OpencvDemo131();
+	// 	break;
+
+	// case 132:
+	// 	// OpenCV DNN 单张与多张图像的推断
+	// 	ret = OpencvDemo132();
+	// 	break;
+
+	// case 133:
+	// 	// OpenCV DNN 图像彩色化模型使用
+	// 	ret = OpencvDemo133();
+	// 	break;
+
+	// case 134:
+	// 	// OpenCV DNN ENet实现图像分割
+	// 	ret = OpencvDemo134();
+	// 	break;
+
+	// case 135:
+	// 	// OpenCV DNN 实时快速的图像风格迁移
+	// 	ret = OpencvDemo135();
+	// 	break;
+
+	// case 136:
+	// 	// OpenCV DNN 解析网络输出结果
+	// 	ret = OpencvDemo136();
+	// 	break;
+
+	// case 137:
+	// 	// OpenCV DNN 实现性别与年龄预测
+	// 	ret = OpencvDemo137();
+	// 	break;
+
+	// case 138:
+	// 	// OpenCV DNN 使用OpenVINO加速
+	// 	ret = OpencvDemo138();
+	// 	break;
+
+	// case 139:
+	// 	// 案例：识别0～9印刷体数字—Part1
+	// 	ret = OpencvDemo139();
+	// 	break;
+
+	// case 140:
+	// 	// 案例：识别0～9印刷体数字—Part2
+	// 	ret = OpencvDemo140();
+	// 	break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
