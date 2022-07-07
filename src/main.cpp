@@ -122,7 +122,7 @@ int OpencvDemo118();
 int OpencvDemo119();
 int OpencvDemo120();
 int OpencvDemo121();
-// int OpencvDemo122();
+int OpencvDemo122();
 // int OpencvDemo123();
 // int OpencvDemo124();
 // int OpencvDemo125();
@@ -759,10 +759,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo121();
 		break;
 
-	// case 122:
-	// 	// OpenCV DNN 实现图像分类
-	// 	ret = OpencvDemo122();
-	// 	break;
+	case 122:
+		// OpenCV DNN 实现图像分类
+		ret = OpencvDemo122();
+		break;
 
 	// case 123:
 	// 	// OpenCV DNN 为模型运行设置目标设备与计算后台

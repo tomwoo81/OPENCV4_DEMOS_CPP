@@ -8,10 +8,13 @@ static std::string protxt = "models/googlenet/bvlc_googlenet.prototxt";
 int OpencvDemo121() {
     cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_DEBUG);
 
-	// load CNN model
+	// load a DNN model
 	cv::dnn::Net net = cv::dnn::readNet(bin_model, protxt);
-
-    CV_LOG_INFO(CV_LOGTAG_GLOBAL, "Successfully loaded a model.");
+	if (net.empty()) {
+		CV_LOG_ERROR(CV_LOGTAG_GLOBAL, "could not load a DNN model!");
+		return cv::Error::StsError;
+	}
+    CV_LOG_INFO(CV_LOGTAG_GLOBAL, "Successfully loaded a DNN model.");
 
 	// get info of layers
 	std::vector<std::string> layer_names = net.getLayerNames();
