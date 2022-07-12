@@ -123,9 +123,9 @@ int OpencvDemo119();
 int OpencvDemo120();
 int OpencvDemo121();
 int OpencvDemo122();
-// int OpencvDemo123();
-// int OpencvDemo124();
-// int OpencvDemo125();
+int OpencvDemo123();
+int OpencvDemo124();
+int OpencvDemo125();
 // int OpencvDemo126();
 // int OpencvDemo127();
 // int OpencvDemo128();
@@ -764,20 +764,20 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo122();
 		break;
 
-	// case 123:
-	// 	// OpenCV DNN 为模型运行设置目标设备与计算后台
-	// 	ret = OpencvDemo123();
-	// 	break;
+	case 123:
+		// OpenCV DNN 为模型运行设置目标设备与计算后台
+		ret = OpencvDemo123();
+		break;
 
-	// case 124:
-	// 	// OpenCV DNN 基于SSD实现对象检测
-	// 	ret = OpencvDemo124();
-	// 	break;
+	case 124:
+		// OpenCV DNN 基于SSD实现对象检测
+		ret = OpencvDemo124();
+		break;
 
-	// case 125:
-	// 	// OpenCV DNN 基于SSD实现实时视频检测
-	// 	ret = OpencvDemo125();
-	// 	break;
+	case 125:
+		// OpenCV DNN 基于SSD实现实时视频检测
+		ret = OpencvDemo125();
+		break;
 
 	// case 126:
 	// 	// OpenCV DNN 基于残差网络的人脸检测
