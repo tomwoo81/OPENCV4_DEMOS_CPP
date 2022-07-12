@@ -78,7 +78,7 @@ int OpencvDemo125() {
         std::vector<double> timings;
         double time = net.getPerfProfile(timings) * 1000.0 / cv::getTickFrequency();
         std::string text = cv::format("time: %.0f ms", time);
-        cv::putText(dst, text, cv::Point(20, 60), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 2);
+        cv::putText(dst, text, cv::Point(20, 60), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 1);
 
 		int h = src.rows;
 		int w = src.cols;

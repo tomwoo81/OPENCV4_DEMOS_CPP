@@ -126,7 +126,7 @@ int OpencvDemo122();
 int OpencvDemo123();
 int OpencvDemo124();
 int OpencvDemo125();
-// int OpencvDemo126();
+int OpencvDemo126();
 // int OpencvDemo127();
 // int OpencvDemo128();
 // int OpencvDemo129();
@@ -779,10 +779,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo125();
 		break;
 
-	// case 126:
-	// 	// OpenCV DNN 基于残差网络的人脸检测
-	// 	ret = OpencvDemo126();
-	// 	break;
+	case 126:
+		// OpenCV DNN 基于残差网络的人脸检测
+		ret = OpencvDemo126();
+		break;
 
 	// case 127:
 	// 	// OpenCV DNN 基于残差网络的视频人脸检测
