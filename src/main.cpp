@@ -127,7 +127,7 @@ int OpencvDemo123();
 int OpencvDemo124();
 int OpencvDemo125();
 int OpencvDemo126();
-// int OpencvDemo127();
+int OpencvDemo127();
 // int OpencvDemo128();
 // int OpencvDemo129();
 // int OpencvDemo130();
@@ -784,10 +784,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo126();
 		break;
 
-	// case 127:
-	// 	// OpenCV DNN 基于残差网络的视频人脸检测
-	// 	ret = OpencvDemo127();
-	// 	break;
+	case 127:
+		// OpenCV DNN 基于残差网络的视频人脸检测
+		ret = OpencvDemo127();
+		break;
 
 	// case 128:
 	// 	// OpenCV DNN 直接调用TensorFlow的导出模型
