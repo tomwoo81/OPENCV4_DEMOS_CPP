@@ -128,7 +128,7 @@ int OpencvDemo124();
 int OpencvDemo125();
 int OpencvDemo126();
 int OpencvDemo127();
-// int OpencvDemo128();
+int OpencvDemo128();
 // int OpencvDemo129();
 // int OpencvDemo130();
 // int OpencvDemo131();
@@ -789,10 +789,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo127();
 		break;
 
-	// case 128:
-	// 	// OpenCV DNN 直接调用TensorFlow的导出模型
-	// 	ret = OpencvDemo128();
-	// 	break;
+	case 128:
+		// OpenCV DNN 直接调用TensorFlow的导出模型
+		ret = OpencvDemo128();
+		break;
 
 	// case 129:
 	// 	// OpenCV DNN 调用OpenPose模型实现姿态评估
