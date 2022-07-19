@@ -129,7 +129,7 @@ int OpencvDemo125();
 int OpencvDemo126();
 int OpencvDemo127();
 int OpencvDemo128();
-// int OpencvDemo129();
+int OpencvDemo129();
 // int OpencvDemo130();
 // int OpencvDemo131();
 // int OpencvDemo132();
@@ -794,10 +794,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo128();
 		break;
 
-	// case 129:
-	// 	// OpenCV DNN 调用OpenPose模型实现姿态评估
-	// 	ret = OpencvDemo129();
-	// 	break;
+	case 129:
+		// OpenCV DNN 调用OpenPose模型实现姿态评估
+		ret = OpencvDemo129();
+		break;
 
 	// case 130:
 	// 	// OpenCV DNN 支持YOLO对象检测网络运行
