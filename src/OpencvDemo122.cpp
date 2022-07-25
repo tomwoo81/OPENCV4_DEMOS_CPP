@@ -41,7 +41,7 @@ int OpencvDemo122() {
     net.setInput(input, "input");
     cv::Mat output = net.forward("softmax2");
 
-	// get a class with a highest score
+	// get the class with the highest score
 	cv::Mat probMat = output.reshape(1, 1);
 	double confidence;
 	cv::Point maxLoc;

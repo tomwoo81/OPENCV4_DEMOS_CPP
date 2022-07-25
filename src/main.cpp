@@ -130,10 +130,10 @@ int OpencvDemo126();
 int OpencvDemo127();
 int OpencvDemo128();
 int OpencvDemo129();
-// int OpencvDemo130();
-// int OpencvDemo131();
-// int OpencvDemo132();
-// int OpencvDemo133();
+int OpencvDemo130();
+int OpencvDemo131();
+int OpencvDemo132();
+int OpencvDemo133();
 // int OpencvDemo134();
 // int OpencvDemo135();
 // int OpencvDemo136();
@@ -799,25 +799,25 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo129();
 		break;
 
-	// case 130:
-	// 	// OpenCV DNN 支持YOLO对象检测网络运行
-	// 	ret = OpencvDemo130();
-	// 	break;
+	case 130:
+		// OpenCV DNN 支持YOLO对象检测网络运行
+		ret = OpencvDemo130();
+		break;
 
-	// case 131:
-	// 	// OpenCV DNN 支持YOLOv3-tiny版本实时对象检测
-	// 	ret = OpencvDemo131();
-	// 	break;
+	case 131:
+		// OpenCV DNN 支持YOLOv3-tiny版本实时对象检测
+		ret = OpencvDemo131();
+		break;
 
-	// case 132:
-	// 	// OpenCV DNN 单张与多张图像的推断
-	// 	ret = OpencvDemo132();
-	// 	break;
+	case 132:
+		// OpenCV DNN 单张与多张图像的推断
+		ret = OpencvDemo132();
+		break;
 
-	// case 133:
-	// 	// OpenCV DNN 图像彩色化模型使用
-	// 	ret = OpencvDemo133();
-	// 	break;
+	case 133:
+		// OpenCV DNN 图像彩色化模型使用
+		ret = OpencvDemo133();
+		break;
 
 	// case 134:
 	// 	// OpenCV DNN ENet实现图像分割
