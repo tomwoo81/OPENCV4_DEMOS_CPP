@@ -134,7 +134,7 @@ int OpencvDemo130();
 int OpencvDemo131();
 int OpencvDemo132();
 int OpencvDemo133();
-// int OpencvDemo134();
+int OpencvDemo134();
 // int OpencvDemo135();
 // int OpencvDemo136();
 // int OpencvDemo137();
@@ -819,10 +819,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo133();
 		break;
 
-	// case 134:
-	// 	// OpenCV DNN ENet实现图像分割
-	// 	ret = OpencvDemo134();
-	// 	break;
+	case 134:
+		// OpenCV DNN ENet实现图像分割
+		ret = OpencvDemo134();
+		break;
 
 	// case 135:
 	// 	// OpenCV DNN 实时快速的图像风格迁移
