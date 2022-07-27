@@ -135,7 +135,7 @@ int OpencvDemo131();
 int OpencvDemo132();
 int OpencvDemo133();
 int OpencvDemo134();
-// int OpencvDemo135();
+int OpencvDemo135();
 // int OpencvDemo136();
 // int OpencvDemo137();
 // int OpencvDemo138();
@@ -824,10 +824,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo134();
 		break;
 
-	// case 135:
-	// 	// OpenCV DNN 实时快速的图像风格迁移
-	// 	ret = OpencvDemo135();
-	// 	break;
+	case 135:
+		// OpenCV DNN 实时快速的图像风格迁移
+		ret = OpencvDemo135();
+		break;
 
 	// case 136:
 	// 	// OpenCV DNN 解析网络输出结果
