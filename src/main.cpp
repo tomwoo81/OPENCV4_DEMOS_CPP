@@ -136,7 +136,7 @@ int OpencvDemo132();
 int OpencvDemo133();
 int OpencvDemo134();
 int OpencvDemo135();
-// int OpencvDemo136();
+int OpencvDemo136();
 // int OpencvDemo137();
 // int OpencvDemo138();
 // int OpencvDemo139();
@@ -829,10 +829,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo135();
 		break;
 
-	// case 136:
-	// 	// OpenCV DNN 解析网络输出结果
-	// 	ret = OpencvDemo136();
-	// 	break;
+	case 136:
+		// OpenCV DNN 解析网络输出结果
+		ret = OpencvDemo136();
+		break;
 
 	// case 137:
 	// 	// OpenCV DNN 实现性别与年龄预测

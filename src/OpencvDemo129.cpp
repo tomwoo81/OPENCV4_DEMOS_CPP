@@ -72,7 +72,7 @@ int OpencvDemo129() {
 	dst_mpi.copyTo(result(cv::Range(0, h), cv::Range(w, w * 2)));
 	cv::putText(result, "image with results (COCO body model)", cv::Point(10, 30), cv::FONT_ITALIC, 1.2, cv::Scalar(0, 0, 255), 2);
 	cv::putText(result, "image with results (MPI body model)", cv::Point(w + 10, 30), cv::FONT_ITALIC, 1.2, cv::Scalar(0, 0, 255), 2);
-	std::string windowTitle = "body pose estimation - OpenPose model";
+	std::string windowTitle = "body pose estimation - OpenPose models";
 	cv::namedWindow(windowTitle, cv::WINDOW_NORMAL);
 	cv::resizeWindow(windowTitle, cv::Size(w / 2, h / 4));
 	cv::imshow(windowTitle, result);

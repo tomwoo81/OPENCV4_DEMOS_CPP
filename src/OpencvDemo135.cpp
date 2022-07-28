@@ -64,7 +64,7 @@ int OpencvDemo135() {
 	cv::putText(result, "feathers", cv::Point(w * 2 + 10, h + 40), cv::FONT_ITALIC, 1.2, cv::Scalar(0, 0, 255), 2);
 	cv::putText(result, "candy", cv::Point(w * 3 + 10, h + 40), cv::FONT_ITALIC, 1.2, cv::Scalar(0, 0, 255), 2);
 	cv::putText(result, "udnie", cv::Point(w * 4 + 10, h + 40), cv::FONT_ITALIC, 1.2, cv::Scalar(0, 0, 255), 2);
-	std::string windowTitle = "fast style transfer - DCGAN model";
+	std::string windowTitle = "fast style transfer - DCGAN models";
 	cv::namedWindow(windowTitle, cv::WINDOW_NORMAL);
 	cv::resizeWindow(windowTitle, cv::Size(w * 5 / 2, h));
 	cv::imshow(windowTitle, result);
