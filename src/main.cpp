@@ -137,7 +137,7 @@ int OpencvDemo133();
 int OpencvDemo134();
 int OpencvDemo135();
 int OpencvDemo136();
-// int OpencvDemo137();
+int OpencvDemo137();
 // int OpencvDemo138();
 // int OpencvDemo139();
 // int OpencvDemo140();
@@ -834,10 +834,10 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo136();
 		break;
 
-	// case 137:
-	// 	// OpenCV DNN 实现性别与年龄预测
-	// 	ret = OpencvDemo137();
-	// 	break;
+	case 137:
+		// OpenCV DNN 实现性别与年龄预测
+		ret = OpencvDemo137();
+		break;
 
 	// case 138:
 	// 	// OpenCV DNN 使用OpenVINO加速
