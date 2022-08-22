@@ -10,8 +10,8 @@ static std::string gender_model_txt = "models/cnn_age_gender_models/gender_deplo
 static std::string age_model_bin = "models/cnn_age_gender_models/age_net.caffemodel";
 static std::string age_model_txt = "models/cnn_age_gender_models/age_deploy.prototxt";
 
-std::string genderList[] = { "Male", "Female" };
-std::string ageList[] = { "(0-2)", "(4-6)", "(8-12)", "(15-20)", "(25-32)", "(38-43)", "(48-53)", "(60-100)" };
+static std::string genderList[] = { "Male", "Female" };
+static std::string ageList[] = { "(0-2)", "(4-6)", "(8-12)", "(15-20)", "(25-32)", "(38-43)", "(48-53)", "(60-100)" };
 
 // OpenCV DNN 实现性别与年龄预测
 int OpencvDemo137() {

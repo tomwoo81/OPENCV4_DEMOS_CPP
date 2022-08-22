@@ -1,8 +1,8 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
-std::string base_dir = "models/fast_style/";
-std::string models_bin[9] = {
+static std::string base_dir = "models/fast_style/";
+static std::string models_bin[9] = {
 "composition_vii.t7", 
 "starry_night.t7", 
 "la_muse.t7", 

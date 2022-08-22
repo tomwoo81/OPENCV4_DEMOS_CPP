@@ -139,8 +139,8 @@ int OpencvDemo135();
 int OpencvDemo136();
 int OpencvDemo137();
 int OpencvDemo138();
-// int OpencvDemo139();
-// int OpencvDemo140();
+int OpencvDemo139();
+int OpencvDemo140();
 
 int main(int argc, char** argv) {
 	if (argc < 2)
@@ -844,15 +844,15 @@ int main(int argc, char** argv) {
 		ret = OpencvDemo138();
 		break;
 
-	// case 139:
-	// 	// 案例：识别0～9印刷体数字—Part1
-	// 	ret = OpencvDemo139();
-	// 	break;
+	case 139:
+		// 案例：识别0～9印刷体数字—Part 1
+		ret = OpencvDemo139();
+		break;
 
-	// case 140:
-	// 	// 案例：识别0～9印刷体数字—Part2
-	// 	ret = OpencvDemo140();
-	// 	break;
+	case 140:
+		// 案例：识别0～9印刷体数字—Part 2
+		ret = OpencvDemo140();
+		break;
 
 	default:
 		std::cerr << "The argument is invalid!" << std::endl;
