@@ -192,7 +192,7 @@ OS: Ubuntu 16以上
 
 ## 8. 范例运行方法
 Executable: OPENCV4_DEMOS_CPP  
-Parameter: 范例序号（如001、012、138）  
+Argument: 范例序号（如001、012、138）  
 
 ## 9. 许可协议
 本项目采用MIT协议进行许可。  
