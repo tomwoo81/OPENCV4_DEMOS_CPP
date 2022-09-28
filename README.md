@@ -167,6 +167,10 @@ OpenCV-day-138. [OpenCV DNN 使用OpenVINO加速](https://t.zsxq.com/qFyFI2F )
 OpenCV-day-139. [案例：识别0～9印刷体数字—Part 1](https://t.zsxq.com/QfYJQvn )  
 OpenCV-day-140. [案例：识别0～9印刷体数字—Part 2](https://t.zsxq.com/bM37mqz )  
 
+视频处理: 绿幕抠图(https://t.zsxq.com/zbMRZRv)
+图像处理: 分水岭分割案例(https://t.zsxq.com/rNVznAU)
+OpenCV DNN: 人脸识别(https://t.zsxq.com/uZB2BqZ)
+
 注：本项目不提供课程内容与录音。请各位购买此课程后自行学习。
 
 ## 4. 依赖软件版本
