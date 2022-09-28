@@ -167,11 +167,11 @@ OpenCV-day-138. [OpenCV DNN 使用OpenVINO加速](https://t.zsxq.com/qFyFI2F )
 OpenCV-day-139. [案例：识别0～9印刷体数字—Part 1](https://t.zsxq.com/QfYJQvn )  
 OpenCV-day-140. [案例：识别0～9印刷体数字—Part 2](https://t.zsxq.com/bM37mqz )  
 
-视频处理: 绿幕抠图(https://t.zsxq.com/zbMRZRv)
-图像处理: 分水岭分割案例(https://t.zsxq.com/rNVznAU)
-OpenCV DNN: 人脸识别(https://t.zsxq.com/uZB2BqZ)
+[视频处理: 绿幕抠图](https://t.zsxq.com/zbMRZRv )  
+[图像处理: 分水岭分割案例](https://t.zsxq.com/rNVznAU )  
+[OpenCV DNN: 人脸识别](https://t.zsxq.com/uZB2BqZ )  
 
-注：本项目不提供课程内容与录音。请各位购买此课程后自行学习。
+注：本项目不提供课程内容与录音。请各位购买此课程后自行学习。  
 
 ## 4. 依赖软件版本
 OpenCV: opencv-4.5.5-openvino-2022.1.0, opencv_contrib-4.5.5  
@@ -199,27 +199,27 @@ Executable: OPENCV4_DEMOS_CPP
 Argument: 范例序号（如001、012、138）  
 
 ## 9. 大文件获取方法
-本项目有6个大小超过100 MB的文件采用Git Large File Storage (LFS)工具存储。以下为这些文件的路径和名称：
-1) models/colorization/colorization_release_v2.caffemodel
-2) models/faster_rcnn_resnet50_coco/frozen_inference_graph.pb
-3) models/openpose/coco/pose_iter_440000.caffemodel
-4) models/openpose/hand/pose_iter_102000.caffemodel
-5) models/openpose/mpi/pose_iter_160000.caffemodel
-6) models/yolov3/yolov3.weights
+本项目有6个大小超过100 MB的文件采用Git Large File Storage (LFS)工具存储。以下为这些文件的路径和名称：  
+1. models/colorization/colorization_release_v2.caffemodel  
+2. models/faster_rcnn_resnet50_coco/frozen_inference_graph.pb  
+3. models/openpose/coco/pose_iter_440000.caffemodel  
+4. models/openpose/hand/pose_iter_102000.caffemodel  
+5. models/openpose/mpi/pose_iter_160000.caffemodel  
+6. models/yolov3/yolov3.weights  
 
-获取上述大文件有两个方法。
+获取上述大文件有两个方法。  
 
-方法一：
-以存放本项目文件的文件夹为工作目录，依次输入以下命令获取大文件：
-git lfs install --skip-smudge # 启动Git LFS，跳过smudge filter
-git clone [Repository URL] # 克隆Git远程仓库到本地，暂时忽略大文件
-git lfs pull # 从远程获取大文件
-git lfs install --force # 恢复smudge filter
+方法一：  
+以存放本项目文件的文件夹为工作目录，依次输入以下命令获取大文件：  
+git lfs install --skip-smudge # 启动Git LFS，跳过smudge filter  
+git clone [Repository URL] # 克隆Git远程仓库到本地，暂时忽略大文件  
+git lfs pull # 从远程获取大文件  
+git lfs install --force # 恢复smudge filter  
 
-方法二：
-从百度网盘的共享文件夹下载大文件。
-Link: https://pan.baidu.com/s/1ItYu53EM-fSH_39VtF0t8Q
-Password: tf4v
+方法二：  
+从百度网盘的共享文件夹下载大文件。  
+Link: https://pan.baidu.com/s/1ItYu53EM-fSH_39VtF0t8Q  
+Password: tf4v  
 
 ## 10. 许可协议
 本项目采用MIT协议进行许可。  
